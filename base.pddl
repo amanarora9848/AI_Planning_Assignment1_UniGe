@@ -25,7 +25,6 @@
         ;drink
         (empty ?d - drink)
         (warm ?d - drink)
-        (destination ?d - drink ?t - table)
         (preparing ?d - drink)
 
     )
@@ -72,13 +71,13 @@
 
     (:action get_drink
         :parameters (?w - waiter ?d - drink ?br - bar)
-        :precondition (and (not (empty ?d)) (at ?d ?br) (< (carrying ?w) (capacity ?w)))
+        :precondition (and (not (empty ?d)) (at ?d ?br) (at ?w ?br) (< (carrying ?w) (capacity ?w)))
         :effect (and (holding ?w ?d) (increase (carrying ?w) 1) (not (at ?d ?br)))
     )
 
     (:action serve
         :parameters (?w - waiter ?d - drink ?t - table)
-        :precondition (and (holding ?w ?d) (at ?w ?t) (destination ?d ?t))
+        :precondition (and (holding ?w ?d) (at ?w ?t))
         :effect (and (decrease (carrying ?w) 1) (not (holding ?w ?d)) (at ?d ?t))
     )
 
@@ -179,12 +178,13 @@
         :precondition (and
             ; trigger condition
             (moving ?w ?to)
-            (= (dist_to_goal ?w) 0)
+            (<= (dist_to_goal ?w) 0)
         )
         :effect (and
             ; discrete effect(s)
             (not (moving ?w ?to))
             (at ?w ?to)
+            (decrease (dist_to_goal ?w) (dist_to_goal ?w))
         )
     )
 
