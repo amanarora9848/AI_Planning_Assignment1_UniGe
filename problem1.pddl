@@ -1,6 +1,5 @@
 (define (problem problem1) (:domain base)
 (:objects
-    b - barista
     w - waiter
     drink1 drink2 - drink
     br - bar
@@ -8,7 +7,7 @@
 )
 
 (:init
-    (at b br) (at w br)
+    (at w br)
     (at drink1 br) (at drink2 br)
     (empty drink1) (empty drink2)
     (= (dist br table1) 2) (= (dist br table2) 2) (= (dist br table3) 3) (= (dist br table4) 3)
