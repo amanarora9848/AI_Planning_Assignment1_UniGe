@@ -5,10 +5,10 @@
     (:requirements :adl :fluents :time :typing)
 
     (:types
-        barista
         waiter
         drink
         table bar - location
+        order
     )
 
     (:predicates
@@ -21,11 +21,21 @@
 
         ;common
         (at ?x ?l - location)
+        (served ?x)
 
         ;drink
         (empty ?d - drink)
         (warm ?d - drink)
         (preparing ?d - drink)
+
+        ;bar
+        (occupied ?l - location)
+        (is_bar ?l - location)
+
+        ;order
+        (destination ?o - order ?t - table)
+        (elem ?o - order ?d - drink)
+        (assigned ?o - order ?w - waiter)
 
     )
 
@@ -51,13 +61,13 @@
     ;barista
 
     (:action make_cold_drink
-        :parameters (?b - barista ?d - drink ?br - bar)
+        :parameters (?d - drink ?br - bar)
         :precondition (and (not (warm ?d)) (empty ?d) (at ?d ?br) (not (preparing ?d)) (= (preparation_time) 0))
         :effect (and (preparing ?d) (increase (preparation_time) 3))
     )
 
     (:action make_warm_drink
-        :parameters (?b - barista ?d - drink ?br - bar)
+        :parameters (?d - drink ?br - bar)
         :precondition (and (warm ?d) (empty ?d) (at ?d ?br) (not (preparing ?d)) (= (preparation_time) 0))
         :effect (and (preparing ?d) (increase (preparation_time) 5))
     )
@@ -65,21 +75,32 @@
     ;waiter
     (:action move
         :parameters (?w - waiter ?from - location ?to - location)
-        :precondition (and (at ?w ?from) (= (dist_to_goal ?w) 0))
-        :effect (and (increase (dist_to_goal ?w) (dist ?from ?to)) (not (at ?w ?from)) (moving ?w ?to))
+        :precondition (and (at ?w ?from) (= (dist_to_goal ?w) 0) (not (occupied ?to)))
+        :effect (and (increase (dist_to_goal ?w) (dist ?from ?to)) (not (at ?w ?from)) (moving ?w ?to)
+                    (when (is_bar ?to) (occupied ?to)) (when (is_bar ?from) (not (occupied ?from)))
+        )
     )
 
     (:action get_drink
-        :parameters (?w - waiter ?d - drink ?br - bar)
-        :precondition (and (not (empty ?d)) (at ?d ?br) (at ?w ?br) (< (carrying ?w) (capacity ?w)))
-        :effect (and (holding ?w ?d) (increase (carrying ?w) 1) (not (at ?d ?br)))
+        :parameters (?w - waiter ?d - drink ?br - bar ?o - order)
+        :precondition (and (not (empty ?d)) (at ?d ?br) (at ?w ?br) (< (carrying ?w) (capacity ?w)) (elem ?o ?d)
+            (or (assigned ?o ?w) (forall (?x - waiter) (not (assigned ?o ?x))))
+        )
+        :effect (and (holding ?w ?d) (increase (carrying ?w) 1) (not (at ?d ?br)) (assigned ?o ?w))
     )
 
     (:action serve
-        :parameters (?w - waiter ?d - drink ?t - table)
-        :precondition (and (holding ?w ?d) (at ?w ?t))
-        :effect (and (decrease (carrying ?w) 1) (not (holding ?w ?d)) (at ?d ?t))
+        :parameters (?w - waiter ?d - drink ?t - table ?o - order)
+        :precondition (and (holding ?w ?d) (at ?w ?t) (destination ?o ?t) (elem ?o ?d) (not (served ?d)))
+        :effect (and (decrease (carrying ?w) 1) (not (holding ?w ?d)) (at ?d ?t) (served ?d))
     )
+
+    (:action check_order
+        :parameters (?w - waiter ?o - order)
+        :precondition (and (forall (?d - drink) (or (not (elem ?o ?d)) (served ?d))) (assigned ?o ?w))
+        :effect (and (served ?o))
+    )
+    
 
     (:action clean
         :parameters (?w - waiter ?t - table)
@@ -200,6 +221,7 @@
             (not (cleaning ?w ?t))
         )
     )
+    
     
 )
 

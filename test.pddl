@@ -1,14 +1,14 @@
 (define (problem test) (:domain base)
 (:objects
-    b - barista
     w - waiter
     drink1 - drink
     br - bar
     table1 - table
+    o - order
 )
 
 (:init
-    (at b br) (at w br)
+    (at w br) (occupied br) (is_bar br)
     (at drink1 br)
     (empty drink1)
     (= (dist br table1) 2) (= (dist table1 br) 2)
@@ -18,10 +18,11 @@
     (= (dist_to_goal w) 0)
     (= (size table1) 1)
     (= (clean_surface table1) 0)
+    (destination o table1) (assigned o w) (elem o drink1)
 )
 
 (:goal (and
-    (at drink1 table1)
+    (served o)
     (= (clean_surface table1) (size table1))
 ))
 
