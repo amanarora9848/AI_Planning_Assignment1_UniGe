@@ -5,7 +5,6 @@
     (:requirements :adl :fluents :time :typing)
 
     (:types
-        barista
         waiter
         drink
         table bar - location
@@ -51,13 +50,13 @@
     ;barista
 
     (:action make_cold_drink
-        :parameters (?b - barista ?d - drink ?br - bar)
+        :parameters (?d - drink ?br - bar)
         :precondition (and (not (warm ?d)) (empty ?d) (at ?d ?br) (not (preparing ?d)) (= (preparation_time) 0))
         :effect (and (preparing ?d) (increase (preparation_time) 3))
     )
 
     (:action make_warm_drink
-        :parameters (?b - barista ?d - drink ?br - bar)
+        :parameters (?d - drink ?br - bar)
         :precondition (and (warm ?d) (empty ?d) (at ?d ?br) (not (preparing ?d)) (= (preparation_time) 0))
         :effect (and (preparing ?d) (increase (preparation_time) 5))
     )
