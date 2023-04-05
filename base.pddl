@@ -183,7 +183,7 @@
             ; discrete effect(s)
             (not (moving ?w ?to))
             (at ?w ?to)
-            (decrease (dist_to_goal ?w) (dist_to_goal ?w))
+            (assign (dist_to_goal ?w) 0)
         )
     )
 
