@@ -17,12 +17,11 @@
     (= (preparation_time) 0)
     (= (dist_to_goal w) 0)
     (= (size table1) 1)
-    (= (clean_surface table1) 0)
 )
 
 (:goal (and
     (at drink1 table1)
-    (= (clean_surface table1) (size table1))
+    (clean table1)
 ))
 
 ;un-comment the following line if metric is needed
