@@ -18,6 +18,7 @@
         (moving ?w - waiter ?l - location)
         (using_tray ?w - waiter)
         (cleaning ?w - waiter ?t - table)
+        (free ?w - waiter)
 
         ;common
         (at ?x ?l - location)
@@ -27,6 +28,9 @@
         (empty ?d - drink)
         (warm ?d - drink)
         (preparing ?d - drink)
+
+        ;table
+        (clean ?t - table)
 
         ;bar
         (occupied ?l - location)
@@ -52,7 +56,7 @@
 
         ;table
         (size ?t - table)
-        (clean_surface ?t - table)
+        (time_to_clean ?t - table)
 
     )
 
@@ -75,8 +79,8 @@
     ;waiter
     (:action move
         :parameters (?w - waiter ?from - location ?to - location)
-        :precondition (and (at ?w ?from) (= (dist_to_goal ?w) 0) (not (occupied ?to)))
-        :effect (and (increase (dist_to_goal ?w) (dist ?from ?to)) (not (at ?w ?from)) (moving ?w ?to)
+        :precondition (and (at ?w ?from) (= (dist_to_goal ?w) 0) (not (occupied ?to)) (free ?w))
+        :effect (and (increase (dist_to_goal ?w) (dist ?from ?to)) (not (at ?w ?from)) (moving ?w ?to) (not (free ?w))
                     (when (is_bar ?to) (occupied ?to)) (when (is_bar ?from) (not (occupied ?from)))
         )
     )
@@ -102,10 +106,10 @@
     )
     
 
-    (:action clean
+    (:action start_cleaning
         :parameters (?w - waiter ?t - table)
-        :precondition (and (at ?w ?t) (< (clean_surface ?t) (size ?t)) (not (using_tray ?w)))
-        :effect (and (cleaning ?w ?t))
+        :precondition (and (at ?w ?t) (not (clean ?t)) (not (using_tray ?w)) (free ?w))
+        :effect (and (cleaning ?w ?t) (not (free ?w)) (assign (time_to_clean ?t) (* (size ?t) 2)))
     )
 
     (:action equip_tray
@@ -168,11 +172,11 @@
         :precondition (and
             ; activation condition
             (cleaning ?w ?t)
-            (< (clean_surface ?t) (size ?t))
+            (> (time_to_clean ?t) 0)
         )
         :effect (and
             ; continuous effect(s)
-            (increase (clean_surface ?t) (* #t 0.5))
+            (decrease (time_to_clean ?t) (* #t 1))
         )
     )
 
@@ -205,7 +209,8 @@
             ; discrete effect(s)
             (not (moving ?w ?to))
             (at ?w ?to)
-            (decrease (dist_to_goal ?w) (dist_to_goal ?w))
+            (assign (dist_to_goal ?w) 0)
+            (free ?w)
         )
     )
 
@@ -213,12 +218,14 @@
         :parameters (?t - table ?w - waiter)
         :precondition (and
             ; trigger condition
-            (= (clean_surface ?t) (size ?t))
+            (<= (time_to_clean ?t) 0)
             (cleaning ?w ?t)
         )
         :effect (and
             ; discrete effect(s)
             (not (cleaning ?w ?t))
+            (clean ?t)
+            (free ?w)
         )
     )
     
