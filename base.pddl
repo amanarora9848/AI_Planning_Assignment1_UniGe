@@ -237,7 +237,7 @@
         :precondition (and
             ; trigger condition
             (cooling ?d)
-            (< (time_to_cool ?d) 0)
+            (<= (time_to_cool ?d) 0)
         )
         :effect (and
             ; discrete effect(s)
