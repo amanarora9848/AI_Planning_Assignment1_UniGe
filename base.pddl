@@ -1,6 +1,6 @@
 ;Header and description
 
-(define (domain base)
+(define (domain base_cooling)
 
     (:requirements :adl :fluents :time :typing)
 
@@ -26,6 +26,8 @@
         (empty ?d - drink)
         (warm ?d - drink)
         (preparing ?d - drink)
+        (cooled ?d - drink)
+        (cooling ?d - drink)
 
         ;table
         (clean ?t - table)
@@ -46,6 +48,9 @@
         ;table
         (size ?t - table)
         (time_to_clean ?t - table)
+
+        ;drink
+        (time_to_cool ?d - drink)
 
     )
 
@@ -81,7 +86,7 @@
     (:action serve
         :parameters (?w - waiter ?d - drink ?t - table)
         :precondition (and (holding ?w ?d) (at ?w ?t))
-        :effect (and (decrease (carrying ?w) 1) (not (holding ?w ?d)) (at ?d ?t))
+        :effect (and (decrease (carrying ?w) 1) (not (holding ?w ?d)) (at ?d ?t) (not (cooling ?d)))
     )
 
     (:action start_cleaning
@@ -158,6 +163,23 @@
         )
     )
 
+    ;drink
+    (:process cooling_down
+        :parameters (?d - drink)
+        :precondition (and
+            ; activation condition
+            (warm ?d)
+            (not (empty ?d))
+            (cooling ?d)
+            (>= (time_to_cool ?d) 0)
+        )
+        :effect (and
+            ; continuous effect(s)
+            (decrease (time_to_cool ?d) (* #t 1.0))
+        )
+    )
+    
+
     ;Events
     
     ;barista
@@ -172,6 +194,8 @@
             ; discrete effect(s)
             (not (preparing ?d))
             (not (empty ?d))
+            (assign (time_to_cool ?d) 4)
+            (cooling ?d)
         )
     )
     
@@ -204,6 +228,21 @@
             (not (cleaning ?w ?t))
             (clean ?t)
             (free ?w)
+        )
+    )
+
+    ; drink
+    (:event drink_cooled
+        :parameters (?d - drink)
+        :precondition (and
+            ; trigger condition
+            (cooling ?d)
+            (< (time_to_cool ?d) 0)
+        )
+        :effect (and
+            ; discrete effect(s)
+            (not (cooling ?d))
+            (cooled ?d)
         )
     )
     
