@@ -8,6 +8,7 @@
         waiter
         drink
         table bar - location
+        order ;ext3
     )
 
     (:predicates
@@ -21,6 +22,8 @@
 
         ;common
         (at ?x ?l - location)
+        (served ?x) ;ext3
+        (consumed ?x) ;ext3
 
         ;drink
         (empty ?d - drink)
@@ -30,6 +33,9 @@
         ;table
         (clean ?t - table)
 
+        ; order
+        (destination ?o - order ?t - table) ;ext3
+        (elem ?o - order ?d - drink) ;ext3
     )
 
     (:functions
@@ -46,6 +52,9 @@
         ;table
         (size ?t - table)
         (time_to_clean ?t - table)
+
+        ;drink
+        (time_to_drink ?d - drink);ext3
 
     )
 
@@ -78,10 +87,16 @@
         :effect (and (holding ?w ?d) (increase (carrying ?w) 1) (not (at ?d ?br)))
     )
 
-    (:action serve
-        :parameters (?w - waiter ?d - drink ?t - table)
-        :precondition (and (holding ?w ?d) (at ?w ?t))
-        :effect (and (decrease (carrying ?w) 1) (not (holding ?w ?d)) (at ?d ?t))
+    (:action serve ;ext3
+        :parameters (?w - waiter ?d - drink ?t - table ?o - order)
+        :precondition (and (holding ?w ?d) (at ?w ?t) (destination ?o ?t) (elem ?o ?d) (not (served ?d)))
+        :effect (and (decrease (carrying ?w) 1) (not (holding ?w ?d)) (at ?d ?t) (served ?d))
+    )
+
+    (:action check_consumed_order ;ext3
+        :parameters (?o - order ?t - table)
+        :precondition (and (not (consumed ?o)) (destination ?o ?t) (forall (?d - drink) (or (not (elem ?o ?d)) (consumed ?d))))
+        :effect (and (consumed ?o) (not (clean ?t)))
     )
 
     (:action start_cleaning
@@ -158,6 +173,19 @@
         )
     )
 
+    (:process drinking ;ext3
+        :parameters (?d - drink)
+        :precondition (and
+            ; activation condition
+            (served ?d)
+            (> (time_to_drink ?d) 0)
+        )
+        :effect (and
+            ; continuous effect(s)
+            (decrease (time_to_drink ?d) (* #t 1))
+        )
+    )
+
     ;Events
     
     ;barista
@@ -204,6 +232,20 @@
             (not (cleaning ?w ?t))
             (clean ?t)
             (free ?w)
+        )
+    )
+
+    (:event consumed_drink ;ext3
+        :parameters (?d - drink)
+        :precondition (and
+            ; trigger condition
+            (served ?d)
+            (not (consumed ?d))
+            (<= (time_to_drink ?d) 0)
+        )
+        :effect (and
+            ; discrete effect(s)
+            (consumed ?d)
         )
     )
     
