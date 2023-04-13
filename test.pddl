@@ -1,6 +1,5 @@
 (define (problem test) (:domain base)
 (:objects
-    b - barista
     w - waiter
     drink1 - drink
     br - bar
@@ -8,7 +7,7 @@
 )
 
 (:init
-    (at b br) (at w br)
+    (at w br) (free w)
     (at drink1 br)
     (empty drink1)
     (= (dist br table1) 2) (= (dist table1 br) 2)
@@ -22,6 +21,7 @@
 (:goal (and
     (at drink1 table1)
     (clean table1)
+    (not (using_tray w))
 ))
 
 ;un-comment the following line if metric is needed
