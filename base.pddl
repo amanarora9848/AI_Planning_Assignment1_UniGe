@@ -171,7 +171,7 @@
             (warm ?d)
             (not (empty ?d))
             (cooling ?d)
-            (>= (time_to_cool ?d) 0)
+            (> (time_to_cool ?d) 0)
         )
         :effect (and
             ; continuous effect(s)
