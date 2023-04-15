@@ -6,14 +6,14 @@
 
     (:types
         waiter
-        drink
+        drink biscuit - item
         table bar - location
     )
 
     (:predicates
 
         ;waiter
-        (holding ?w - waiter ?d - drink)
+        (holding ?w - waiter ?i - item)
         (moving ?w - waiter ?l - location)
         (using_tray ?w - waiter)
         (cleaning ?w - waiter ?t - table)
@@ -29,6 +29,9 @@
 
         ;table
         (clean ?t - table)
+
+        ;biscuit - ext4
+        (available ?b - biscuit ?t - table ?d - drink)
 
     )
 
@@ -46,6 +49,10 @@
         ;table
         (size ?t - table)
         (time_to_clean ?t - table)
+
+        ;biscuit - ext4
+        (biscuit_bar ?br - bar)
+        (biscuit_delivered ?d - drink)
 
     )
 
@@ -82,6 +89,24 @@
         :parameters (?w - waiter ?d - drink ?t - table)
         :precondition (and (holding ?w ?d) (at ?w ?t))
         :effect (and (decrease (carrying ?w) 1) (not (holding ?w ?d)) (at ?d ?t))
+    )
+
+    (:action biscuit_ready ;ext4
+        :parameters (?d - drink ?t - table ?b - biscuit ?br - bar)
+        :precondition (and (not (available ?b ?t ?d)) (not (at ?b ?br)) (not (warm ?d)) (at ?d ?t) (= (biscuit_bar ?br) 0))
+        :effect (and (at ?b ?br) (available ?b ?t ?d) (increase (biscuit_bar ?br) 1))
+    )
+
+    (:action get_biscuit ;ext4
+        :parameters (?b - biscuit ?w - waiter ?br - bar ?t - table ?d - drink)
+        :precondition (and (at ?b ?br) (available ?b ?t ?d) (at ?w ?br) (< (carrying ?w) (capacity ?w)) (= (biscuit_delivered ?d) 0))
+        :effect (and (holding ?w ?b) (increase (carrying ?w) 1) (not (at ?b ?br)) (increase (biscuit_delivered ?d) 1) (decrease (biscuit_bar ?br) 1))
+    )
+
+    (:action serve_biscuit ;ext4
+        :parameters (?w - waiter ?b - biscuit ?t - table ?d - drink)
+        :precondition (and (= (biscuit_delivered ?d) 1) (holding ?w ?b) (at ?w ?t) (available ?b ?t ?d))
+        :effect (and (decrease (carrying ?w) 1) (not (holding ?w ?b)) (at ?b ?t))
     )
 
     (:action start_cleaning
@@ -208,4 +233,3 @@
     )
     
 )
-
