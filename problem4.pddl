@@ -2,6 +2,7 @@
 (:objects
     w1 - waiter
     drink1 drink2 drink3 drink4 drink5 drink6 drink7 drink8 - drink
+    biscuit5 biscuit6 biscuit7 biscuit8 - biscuit
     br - bar
     table1 table2 table3 table4 - table
 )
@@ -11,6 +12,7 @@
     (at drink1 br) (at drink2 br) (at drink3 br) (at drink4 br) (at drink5 br) (at drink6 br) (at drink7 br) (at drink8 br) 
     (empty drink1) (empty drink2) (empty drink3) (empty drink4) (empty drink5) (empty drink6) (empty drink7) (empty drink8)
     (warm drink1) (warm drink2) (warm drink3) (warm drink4)
+    (= (biscuit_bar br) 0) (= (biscuit_delivered drink5) 0) (= (biscuit_delivered drink6) 0) (= (biscuit_delivered drink7) 0) (= (biscuit_delivered drink8) 0)
     (= (dist br table1) 2) (= (dist br table2) 2) (= (dist br table3) 3) (= (dist br table4) 3)
     (= (dist table1 br) 2) (= (dist table2 br) 2) (= (dist table3 br) 3) (= (dist table4 br) 3) 
     (= (dist table1 table2) 1) (= (dist table1 table3) 1) (= (dist table1 table4) 1)
@@ -27,7 +29,11 @@
 )
 
 (:goal (and
-    (at drink5 table1) (at drink6 table1) (at drink7 table4) (at drink8 table4) (at drink1 table3) (at drink2 table3) (at drink3 table3) (at drink4 table3)
+    (at drink5 table1) (at biscuit5 table1)
+    (at drink6 table1) (at biscuit6 table1)
+    (at drink7 table4) (at biscuit7 table4)
+    (at drink8 table4) (at biscuit8 table4)
+    (at drink1 table3) (at drink2 table3) (at drink3 table3) (at drink4 table3)
     (clean table4)
     (not (using_tray w1))
 ))
