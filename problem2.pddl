@@ -2,7 +2,6 @@
 (:objects
     w1 w2 - waiter
     drink1 drink2 drink3 drink4 - drink
-    biscuit1 biscuit2 - biscuit
     br - bar
     table1 table2 table3 table4 - table
     o - order
@@ -29,13 +28,13 @@
     (clean table2) (clean table3) (clean table4)
     (destination o table3)
     (elem o drink1) (elem o drink2) (elem o drink3) (elem o drink4)
+    (= (biscuit_count o) 0)
     (= (time_to_drink drink1) 4) (= (time_to_drink drink2) 4) (= (time_to_drink drink3) 4) (= (time_to_drink drink4) 4)
 )
 
 (:goal (and
+    (served o)
     (consumed o)
-    (at biscuit1 table3)
-    (at biscuit2 table3)
     (clean table1) (clean table2) (clean table3) (clean table4)
     (not (using_tray w1)) (not (using_tray w2))
     (not (cooled drink3)) (not (cooled drink4))
