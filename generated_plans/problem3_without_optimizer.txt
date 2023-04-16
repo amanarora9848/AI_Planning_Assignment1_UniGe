@@ -1,0 +1,128 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 59
+Aibr Preprocessing
+|F|:86
+|X|:14
+Aibr Preprocessing
+|A|:76
+|P|:18
+|E|:28
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 16
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=66.0
+ g(n)= 2.0 h(n)=64.0
+ g(n)= 11.0 h(n)=62.0
+ g(n)= 22.0 h(n)=56.0
+ g(n)= 28.0 h(n)=51.0
+ g(n)= 29.0 h(n)=49.0
+ g(n)= 33.0 h(n)=48.0
+ g(n)= 33.0 h(n)=46.0
+-------------Time: 10s ; Expanded Nodes: 43740 (Avg-Speed 4374.0 n/s); Evaluated States: 232914
+ g(n)= 47.0 h(n)=40.0
+ g(n)= 60.0 h(n)=37.0
+ g(n)= 61.0 h(n)=35.0
+ g(n)= 63.0 h(n)=30.0
+ g(n)= 74.0 h(n)=26.0
+ g(n)= 80.0 h(n)=24.0
+ g(n)= 81.0 h(n)=20.0
+ g(n)= 82.0 h(n)=18.0
+ g(n)= 83.0 h(n)=17.0
+ g(n)= 85.0 h(n)=16.0
+ g(n)= 93.0 h(n)=15.0
+ g(n)= 105.0 h(n)=11.0
+-------------Time: 20s ; Expanded Nodes: 99851 (Avg-Speed 4992.0 n/s); Evaluated States: 512738
+ g(n)= 108.0 h(n)=9.0
+ g(n)= 109.0 h(n)=5.0
+ g(n)= 110.0 h(n)=3.0
+ g(n)= 111.0 h(n)=2.0
+ g(n)= 113.0 h(n)=1.0
+ g(n)= 119.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (move w2 table2 table3)
+0: -----waiting---- [0.5]
+0.5: (start_cleaning w2 table3)
+0.5: -----waiting---- [4.5]
+4.5: (make_warm_drink drink3 br)
+4.5: -----waiting---- [8.0]
+8.0: (move w2 table3 table1)
+8.0: -----waiting---- [8.5]
+8.5: (move w1 br table4)
+8.5: -----waiting---- [10.0]
+10.0: (move w2 table1 br)
+10.0: -----waiting---- [11.0]
+11.0: (get_drink w2 drink3 br o2)
+11.0: (move w2 br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w2 drink3 table1 o2)
+12.0: (move w2 table1 br)
+12.0: -----waiting---- [13.0]
+13.0: (make_warm_drink drink2 br)
+13.0: -----waiting---- [17.0]
+17.0: (move w1 table4 table1)
+17.0: -----waiting---- [17.5]
+17.5: (move w2 br table1)
+17.5: -----waiting---- [18.5]
+18.5: (move w2 table1 table4)
+18.5: -----waiting---- [19.0]
+19.0: (move w1 table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w1 drink2 br o1)
+20.0: (move w1 br table4)
+20.0: -----waiting---- [21.5]
+21.5: (serve w1 drink2 table4 o1)
+21.5: (move w2 table4 table1)
+21.5: -----waiting---- [22.0]
+22.0: (make_warm_drink drink4 br)
+22.0: -----waiting---- [27.0]
+27.0: (move w2 table1 br)
+27.0: -----waiting---- [28.0]
+28.0: (get_drink w2 drink4 br o2)
+28.0: (move w2 br table1)
+28.0: -----waiting---- [29.0]
+29.0: (make_warm_drink drink1 br)
+29.0: -----waiting---- [29.5]
+29.5: (serve w2 drink4 table1 o2)
+29.5: -----waiting---- [31.5]
+31.5: (check_order w2 o2)
+31.5: (check_consumed_order o2 table1)
+31.5: (start_cleaning w2 table1)
+31.5: -----waiting---- [33.5]
+33.5: (move w2 table1 br)
+33.5: -----waiting---- [34.5]
+34.5: (move w2 br table2)
+34.5: (move w1 table4 table1)
+34.5: -----waiting---- [35.0]
+35.0: (move w1 table1 br)
+35.0: -----waiting---- [36.0]
+36.0: (get_drink w1 drink1 br o1)
+36.0: (move w1 br table4)
+36.0: -----waiting---- [37.5]
+37.5: (serve w1 drink1 table4 o1)
+37.5: (check_order w1 o1)
+37.5: (move w2 table2 table4)
+37.5: -----waiting---- [38.0]
+38.0: (check_consumed_order o1 table4)
+38.0: (start_cleaning w1 table4)
+38.0: -----waiting---- [40.0]
+
+Plan-Length:150
+Elapsed Time: 40.0
+Metric (Search):119.0
+Planning Time (msec): 20567
+Heuristic Time (msec): 17746
+Search Time (msec): 20190
+Expanded Nodes:102135
+States Evaluated:518912
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:7285
+Number of Duplicates detected:281458

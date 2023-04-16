@@ -35,7 +35,7 @@
         ;table
         (clean ?t - table)
 
-        ;bar ;ext2
+        ;bar
         (occupied ?l - location)
         (is_bar ?l - location)
 
@@ -222,7 +222,7 @@
         )
     )
 
-    (:process drinking ;ext3
+    (:process drinking
         :parameters (?d - drink)
         :precondition (and
             ; activation condition
