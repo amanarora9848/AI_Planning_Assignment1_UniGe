@@ -14,7 +14,6 @@
     (at drink1 br) (at drink2 br) (at drink3 br)
     (empty drink1) (empty drink2) (empty drink3)
     (warm drink2)
-    (= (biscuit_bar br) 0) (= (biscuit_delivered drink1) 0) (= (biscuit_delivered drink3) 0)
     (= (dist br table1) 2) (= (dist table1 br) 2) (= (dist br table2) 2) (= (dist table2 br) 2) (= (dist table2 table1) 1) (= (dist table1 table2) 1)
     (= (capacity w1) 1) (= (capacity w2) 1)
     (= (carrying w1) 0) (= (carrying w2) 0)
