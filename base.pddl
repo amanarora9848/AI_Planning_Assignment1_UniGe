@@ -26,12 +26,14 @@
         (empty ?d - drink)
         (warm ?d - drink)
         (preparing ?d - drink)
+        (biscuit_delivered ?d - drink) ;ext4
 
         ;table
         (clean ?t - table)
 
         ;biscuit - ext4
         (available ?b - biscuit ?t - table ?d - drink)
+        (biscuit_bar ?br - bar)
 
     )
 
@@ -49,10 +51,6 @@
         ;table
         (size ?t - table)
         (time_to_clean ?t - table)
-
-        ;biscuit - ext4
-        (biscuit_bar ?br - bar)
-        (biscuit_delivered ?d - drink)
 
     )
 
@@ -93,19 +91,19 @@
 
     (:action biscuit_ready ;ext4
         :parameters (?d - drink ?t - table ?b - biscuit ?br - bar)
-        :precondition (and (not (available ?b ?t ?d)) (not (at ?b ?br)) (not (warm ?d)) (at ?d ?t) (= (biscuit_bar ?br) 0))
-        :effect (and (at ?b ?br) (available ?b ?t ?d) (increase (biscuit_bar ?br) 1))
+        :precondition (and (not (available ?b ?t ?d)) (not (at ?b ?br)) (not (warm ?d)) (at ?d ?t) (not (biscuit_bar ?br)) (not (biscuit_delivered ?d)))
+        :effect (and (at ?b ?br) (available ?b ?t ?d) (biscuit_bar ?br))
     )
 
     (:action get_biscuit ;ext4
         :parameters (?b - biscuit ?w - waiter ?br - bar ?t - table ?d - drink)
-        :precondition (and (at ?b ?br) (available ?b ?t ?d) (at ?w ?br) (< (carrying ?w) (capacity ?w)) (= (biscuit_delivered ?d) 0))
-        :effect (and (holding ?w ?b) (increase (carrying ?w) 1) (not (at ?b ?br)) (increase (biscuit_delivered ?d) 1) (decrease (biscuit_bar ?br) 1))
+        :precondition (and (at ?b ?br) (available ?b ?t ?d) (at ?w ?br) (< (carrying ?w) (capacity ?w)) (not (biscuit_delivered ?d)))
+        :effect (and (holding ?w ?b) (increase (carrying ?w) 1) (not (at ?b ?br)) (biscuit_delivered ?d) (not (biscuit_bar ?br)))
     )
 
     (:action serve_biscuit ;ext4
         :parameters (?w - waiter ?b - biscuit ?t - table ?d - drink)
-        :precondition (and (= (biscuit_delivered ?d) 1) (holding ?w ?b) (at ?w ?t) (available ?b ?t ?d))
+        :precondition (and (biscuit_delivered ?d) (holding ?w ?b) (at ?w ?t) (available ?b ?t ?d))
         :effect (and (decrease (carrying ?w) 1) (not (holding ?w ?b)) (at ?b ?t))
     )
 
