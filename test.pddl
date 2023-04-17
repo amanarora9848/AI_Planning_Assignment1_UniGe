@@ -18,7 +18,6 @@
     (= (preparation_time) 0)
     (= (dist_to_goal w) 0)
     (= (size table1) 1) (= (size table2) 1)
-    (clean table1) (clean table2)
     (destination o1 table1) (destination o2 table2)
     (elem o1 drink1) (elem o2 drink2) (elem o1 drink3)
     (= (biscuit_count o1) 0) (= (biscuit_count o2) 0)
