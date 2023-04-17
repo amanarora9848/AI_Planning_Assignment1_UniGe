@@ -28,6 +28,7 @@
         (warm ?d - drink)
         (preparing ?d - drink)
         (biscuit_delivered ?d - drink) ;ext4
+        (biscuit_acquired ?d - drink) ;ext4
 
         ;table
         (clean ?t - table)
@@ -96,19 +97,19 @@
 
     (:action get_biscuit ;ext4
         :parameters (?w - waiter ?d - drink ?br - bar ?o - order)
-        :precondition (and (at ?w ?br) (< (carrying ?w) (capacity ?w)) (not (biscuit_delivered ?d)) (elem ?o ?d) (assigned ?o ?w) (not (warm ?d)) (served ?d))
-        :effect (and (increase (biscuit_count ?o) 1) (increase (carrying ?w) 1))
+        :precondition (and (at ?w ?br) (< (carrying ?w) (capacity ?w)) (not (biscuit_acquired ?d)) (elem ?o ?d) (assigned ?o ?w) (not (warm ?d)) (served ?d))
+        :effect (and (increase (biscuit_count ?o) 1) (increase (carrying ?w) 1) (biscuit_acquired ?d))
     )
 
     (:action serve_biscuit ;ext4
         :parameters (?w - waiter ?d - drink ?t - table ?o - order)
-        :precondition (and (at ?w ?t) (> (biscuit_count ?o) 0) (elem ?o ?d) (assigned ?o ?w) (destination ?o ?t) (not (warm ?d)) (not (biscuit_delivered ?d)))
+        :precondition (and (at ?w ?t) (> (biscuit_count ?o) 0) (elem ?o ?d) (assigned ?o ?w) (destination ?o ?t) (not (warm ?d)) (not (biscuit_delivered ?d)) (biscuit_acquired ?d))
         :effect (and (decrease (carrying ?w) 1) (decrease (biscuit_count ?o) 1) (biscuit_delivered ?d))
     )
 
     (:action check_order
         :parameters (?w - waiter ?o - order)
-        :precondition (and (forall (?d - drink) (or (not (elem ?o ?d)) (served ?d))) (assigned ?o ?w)
+        :precondition (and (forall (?d - drink) (or (not (elem ?o ?d)) (served ?d))) (free ?w) (assigned ?o ?w)
                             (forall (?d - drink) (or (not (elem ?o ?d)) (warm ?d) (biscuit_delivered ?d)))
         )
         :effect (and (served ?o))
