@@ -1,0 +1,152 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 27
+|F|:101
+|X|:8
+|A|:148
+|P|:10
+|E|:13
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=0.0
+f(n) = 1.0 (Expanded Nodes: 1, Evaluated States: 9, Time: 0.004) Frontier Size: 8
+f(n) = 2.0 (Expanded Nodes: 10, Evaluated States: 41, Time: 0.019) Frontier Size: 31
+f(n) = 3.0 (Expanded Nodes: 42, Evaluated States: 121, Time: 0.026) Frontier Size: 79
+f(n) = 4.0 (Expanded Nodes: 122, Evaluated States: 265, Time: 0.032) Frontier Size: 143
+f(n) = 5.0 (Expanded Nodes: 266, Evaluated States: 464, Time: 0.039) Frontier Size: 198
+f(n) = 6.0 (Expanded Nodes: 465, Evaluated States: 701, Time: 0.044) Frontier Size: 236
+f(n) = 7.0 (Expanded Nodes: 702, Evaluated States: 953, Time: 0.05) Frontier Size: 251
+f(n) = 8.0 (Expanded Nodes: 954, Evaluated States: 1223, Time: 0.055) Frontier Size: 269
+f(n) = 9.0 (Expanded Nodes: 1224, Evaluated States: 1601, Time: 0.065) Frontier Size: 377
+f(n) = 10.0 (Expanded Nodes: 1602, Evaluated States: 2219, Time: 0.073) Frontier Size: 617
+f(n) = 11.0 (Expanded Nodes: 2220, Evaluated States: 2974, Time: 0.081) Frontier Size: 754
+f(n) = 12.0 (Expanded Nodes: 2975, Evaluated States: 3833, Time: 0.091) Frontier Size: 858
+f(n) = 13.0 (Expanded Nodes: 3834, Evaluated States: 4993, Time: 0.102) Frontier Size: 1159
+f(n) = 14.0 (Expanded Nodes: 4994, Evaluated States: 6814, Time: 0.119) Frontier Size: 1820
+f(n) = 15.0 (Expanded Nodes: 6815, Evaluated States: 9535, Time: 0.14) Frontier Size: 2720
+f(n) = 16.0 (Expanded Nodes: 9536, Evaluated States: 13295, Time: 0.172) Frontier Size: 3759
+f(n) = 17.0 (Expanded Nodes: 13296, Evaluated States: 18339, Time: 0.208) Frontier Size: 5043
+f(n) = 18.0 (Expanded Nodes: 18340, Evaluated States: 25305, Time: 0.276) Frontier Size: 6965
+f(n) = 19.0 (Expanded Nodes: 25306, Evaluated States: 35220, Time: 0.332) Frontier Size: 9914
+f(n) = 20.0 (Expanded Nodes: 35221, Evaluated States: 49078, Time: 0.416) Frontier Size: 13857
+f(n) = 21.0 (Expanded Nodes: 49079, Evaluated States: 66669, Time: 0.519) Frontier Size: 17590
+f(n) = 22.0 (Expanded Nodes: 66670, Evaluated States: 87638, Time: 0.645) Frontier Size: 20968
+f(n) = 23.0 (Expanded Nodes: 87639, Evaluated States: 112728, Time: 0.802) Frontier Size: 25089
+f(n) = 24.0 (Expanded Nodes: 112729, Evaluated States: 143770, Time: 0.973) Frontier Size: 31041
+f(n) = 25.0 (Expanded Nodes: 143771, Evaluated States: 183313, Time: 1.178) Frontier Size: 39542
+f(n) = 26.0 (Expanded Nodes: 183314, Evaluated States: 233625, Time: 1.513) Frontier Size: 50311
+f(n) = 27.0 (Expanded Nodes: 233626, Evaluated States: 293462, Time: 1.852) Frontier Size: 59836
+f(n) = 28.0 (Expanded Nodes: 293463, Evaluated States: 363388, Time: 2.268) Frontier Size: 69925
+f(n) = 29.0 (Expanded Nodes: 363389, Evaluated States: 449631, Time: 2.899) Frontier Size: 86242
+f(n) = 30.0 (Expanded Nodes: 449632, Evaluated States: 557901, Time: 3.488) Frontier Size: 108269
+f(n) = 31.0 (Expanded Nodes: 557902, Evaluated States: 690648, Time: 4.277) Frontier Size: 132746
+f(n) = 32.0 (Expanded Nodes: 690649, Evaluated States: 852009, Time: 5.523) Frontier Size: 161360
+f(n) = 33.0 (Expanded Nodes: 852010, Evaluated States: 1051709, Time: 6.663) Frontier Size: 199699
+f(n) = 34.0 (Expanded Nodes: 1051710, Evaluated States: 1288606, Time: 8.133) Frontier Size: 236896
+f(n) = 35.0 (Expanded Nodes: 1288607, Evaluated States: 1563226, Time: 9.889) Frontier Size: 274619
+-------------Time: 10s ; Expanded Nodes: 1294329 (Avg-Speed 129432.0 n/s); Evaluated States: 1572868
+f(n) = 36.0 (Expanded Nodes: 1563227, Evaluated States: 1877564, Time: 12.493) Frontier Size: 314337
+f(n) = 37.0 (Expanded Nodes: 1877565, Evaluated States: 2231431, Time: 14.711) Frontier Size: 353866
+f(n) = 38.0 (Expanded Nodes: 2231432, Evaluated States: 2617585, Time: 17.303) Frontier Size: 386153
+f(n) = 39.0 (Expanded Nodes: 2617586, Evaluated States: 3024830, Time: 20.224) Frontier Size: 407244
+-------------Time: 20s ; Expanded Nodes: 2661861 (Avg-Speed 133093.0 n/s); Evaluated States: 3078264
+f(n) = 40.0 (Expanded Nodes: 3024831, Evaluated States: 3467021, Time: 24.398) Frontier Size: 442190
+f(n) = 41.0 (Expanded Nodes: 3467022, Evaluated States: 3945167, Time: 27.42) Frontier Size: 478145
+-------------Time: 30s ; Expanded Nodes: 3910516 (Avg-Speed 130350.0 n/s); Evaluated States: 4433137
+f(n) = 42.0 (Expanded Nodes: 3945168, Evaluated States: 4463291, Time: 30.816) Frontier Size: 518123
+f(n) = 43.0 (Expanded Nodes: 4463292, Evaluated States: 5029053, Time: 34.458) Frontier Size: 565761
+f(n) = 44.0 (Expanded Nodes: 5029054, Evaluated States: 5663571, Time: 38.657) Frontier Size: 634517
+-------------Time: 40s ; Expanded Nodes: 5282078 (Avg-Speed 132051.0 n/s); Evaluated States: 5986724
+f(n) = 45.0 (Expanded Nodes: 5663572, Evaluated States: 6388565, Time: 46.087) Frontier Size: 724993
+-------------Time: 50s ; Expanded Nodes: 6304503 (Avg-Speed 126090.0 n/s); Evaluated States: 7155747
+f(n) = 46.0 (Expanded Nodes: 6388566, Evaluated States: 7241865, Time: 51.216) Frontier Size: 853299
+f(n) = 47.0 (Expanded Nodes: 7241866, Evaluated States: 8213167, Time: 57.208) Frontier Size: 971301
+-------------Time: 60s ; Expanded Nodes: 7720965 (Avg-Speed 128682.0 n/s); Evaluated States: 8744247
+f(n) = 48.0 (Expanded Nodes: 8213168, Evaluated States: 9287365, Time: 64.231) Frontier Size: 1074197
+-------------Time: 70s ; Expanded Nodes: 9086693 (Avg-Speed 129809.0 n/s); Evaluated States: 10220085
+f(n) = 49.0 (Expanded Nodes: 9287366, Evaluated States: 10415467, Time: 72.099) Frontier Size: 1128101
+-------------Time: 80s ; Expanded Nodes: 10377567 (Avg-Speed 129719.0 n/s); Evaluated States: 11504614
+f(n) = 50.0 (Expanded Nodes: 10415468, Evaluated States: 11539209, Time: 80.877) Frontier Size: 1123741
+-------------Time: 95s ; Expanded Nodes: 11515573 (Avg-Speed 121216.0 n/s); Evaluated States: 12582912
+f(n) = 51.0 (Expanded Nodes: 11539210, Evaluated States: 12601265, Time: 95.588) Frontier Size: 1062055
+f(n) = 52.0 (Expanded Nodes: 12601266, Evaluated States: 13575438, Time: 102.987) Frontier Size: 974172
+-------------Time: 105s ; Expanded Nodes: 12956945 (Avg-Speed 123399.0 n/s); Evaluated States: 13916914
+f(n) = 53.0 (Expanded Nodes: 13575439, Evaluated States: 14418295, Time: 109.612) Frontier Size: 842856
+f(n) = 54.0 (Expanded Nodes: 14418296, Evaluated States: 15134584, Time: 115.376) Frontier Size: 716288
+-------------Time: 115s ; Expanded Nodes: 14426448 (Avg-Speed 125447.0 n/s); Evaluated States: 15142303
+f(n) = 55.0 (Expanded Nodes: 15134585, Evaluated States: 15744050, Time: 120.251) Frontier Size: 609465
+f(n) = 56.0 (Expanded Nodes: 15744051, Evaluated States: 16265871, Time: 124.388) Frontier Size: 521820
+-------------Time: 125s ; Expanded Nodes: 15896948 (Avg-Speed 127175.0 n/s); Evaluated States: 16416456
+f(n) = 57.0 (Expanded Nodes: 16265872, Evaluated States: 16713898, Time: 127.96) Frontier Size: 448026
+f(n) = 58.0 (Expanded Nodes: 16713899, Evaluated States: 17098327, Time: 131.145) Frontier Size: 384428
+f(n) = 59.0 (Expanded Nodes: 17098328, Evaluated States: 17448153, Time: 134.012) Frontier Size: 349825
+-------------Time: 135s ; Expanded Nodes: 17298763 (Avg-Speed 128138.0 n/s); Evaluated States: 17642856
+f(n) = 60.0 (Expanded Nodes: 17448154, Evaluated States: 17770019, Time: 136.508) Frontier Size: 321865
+f(n) = 61.0 (Expanded Nodes: 17770020, Evaluated States: 18067887, Time: 138.805) Frontier Size: 297867
+f(n) = 62.0 (Expanded Nodes: 18067888, Evaluated States: 18327499, Time: 140.932) Frontier Size: 259611
+f(n) = 63.0 (Expanded Nodes: 18327500, Evaluated States: 18553927, Time: 142.798) Frontier Size: 226427
+f(n) = 64.0 (Expanded Nodes: 18553928, Evaluated States: 18748859, Time: 144.581) Frontier Size: 194931
+-------------Time: 145s ; Expanded Nodes: 18676263 (Avg-Speed 128801.0 n/s); Evaluated States: 18851168
+f(n) = 65.0 (Expanded Nodes: 18748860, Evaluated States: 18907585, Time: 146.026) Frontier Size: 158725
+f(n) = 66.0 (Expanded Nodes: 18907586, Evaluated States: 19036071, Time: 147.086) Frontier Size: 128485
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (get_drink w1 drink1 br)
+3.0: (make_cold_drink drink2 br)
+3.0: (move w1 br table3)
+3.0: -----waiting---- [4.5]
+4.5: (serve w1 drink1 table3)
+4.5: (move w1 table3 br)
+4.5: -----waiting---- [6.0]
+6.0: (get_drink w1 drink2 br)
+6.0: (make_warm_drink drink3 br)
+6.0: (move w1 br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w1 table1 table3)
+9.0: -----waiting---- [9.5]
+9.5: (serve w1 drink2 table3)
+9.5: (move w1 table3 br)
+9.5: -----waiting---- [11.0]
+11.0: (equip_tray w1 br)
+11.0: (get_drink w1 drink3 br)
+11.0: (biscuit_ready drink2 table3 biscuit2 br)
+11.0: (get_biscuit biscuit2 w1 br table3 drink2)
+11.0: (biscuit_ready drink1 table3 biscuit1 br)
+11.0: (get_biscuit biscuit1 w1 br table3 drink1)
+11.0: (move w1 br table3)
+11.0: -----waiting---- [11.5]
+11.5: (make_warm_drink drink4 br)
+11.5: -----waiting---- [14.0]
+14.0: (serve_biscuit w1 biscuit2 table3 drink2)
+14.0: (serve_biscuit w1 biscuit1 table3 drink1)
+14.0: (serve w1 drink3 table3)
+14.0: (move w1 table3 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w1 br)
+17.0: (get_drink w1 drink4 br)
+17.0: (move w1 br table3)
+17.0: -----waiting---- [18.5]
+18.5: (serve w1 drink4 table3)
+
+Plan-Length:79
+Elapsed Time: 18.5
+Metric (Search):66.0
+Planning Time (msec): 147364
+Heuristic Time (msec): 451
+Search Time (msec): 147138
+Expanded Nodes:18915501
+States Evaluated:19043152
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:24604497

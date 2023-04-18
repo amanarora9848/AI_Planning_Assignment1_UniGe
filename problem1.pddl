@@ -27,13 +27,13 @@
 )
 
 (:goal (and
-    (at drink1 table1) (at biscuit1 table1)
+    (at drink1 table2) (at biscuit1 table2)
     (at drink2 table2) (at biscuit2 table2)
     (clean table3)
     (clean table4)
-    ; (not (using_tray w))
+    (not (using_tray w))
 ))
 
 ;un-comment the following line if metric is needed
-(:metric minimize (total-time))
+; (:metric minimize (total-time))
 )

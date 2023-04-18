@@ -1,0 +1,187 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 45
+Aibr Preprocessing
+|F|:171
+|X|:5
+Aibr Preprocessing
+|A|:263
+|P|:11
+|E|:14
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 20
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=212.0
+ g(n)= 7.0 h(n)=170.0
+ g(n)= 9.0 h(n)=157.0
+ g(n)= 16.0 h(n)=155.0
+ g(n)= 23.0 h(n)=153.0
+ g(n)= 30.0 h(n)=151.0
+ g(n)= 41.0 h(n)=149.0
+ g(n)= 52.0 h(n)=147.0
+ g(n)= 63.0 h(n)=145.0
+ g(n)= 74.0 h(n)=143.0
+-------------Time: 10s ; Expanded Nodes: 22397 (Avg-Speed 2239.0 n/s); Evaluated States: 112363
+-------------Time: 20s ; Expanded Nodes: 45348 (Avg-Speed 2267.0 n/s); Evaluated States: 227623
+-------------Time: 30s ; Expanded Nodes: 68635 (Avg-Speed 2287.0 n/s); Evaluated States: 343823
+-------------Time: 40s ; Expanded Nodes: 91560 (Avg-Speed 2289.0 n/s); Evaluated States: 457978
+-------------Time: 50s ; Expanded Nodes: 114597 (Avg-Speed 2291.0 n/s); Evaluated States: 573463
+-------------Time: 60s ; Expanded Nodes: 137748 (Avg-Speed 2295.0 n/s); Evaluated States: 689119
+ g(n)= 76.0 h(n)=121.0
+ g(n)= 78.0 h(n)=119.0
+ g(n)= 79.0 h(n)=114.0
+ g(n)= 84.0 h(n)=112.0
+ g(n)= 86.0 h(n)=106.0
+ g(n)= 89.0 h(n)=84.0
+ g(n)= 91.0 h(n)=83.0
+ g(n)= 97.0 h(n)=64.0
+ g(n)= 109.0 h(n)=60.0
+ g(n)= 120.0 h(n)=56.0
+ g(n)= 123.0 h(n)=53.0
+ g(n)= 125.0 h(n)=47.0
+ g(n)= 126.0 h(n)=43.0
+ g(n)= 133.0 h(n)=42.0
+ g(n)= 133.0 h(n)=39.0
+-------------Time: 70s ; Expanded Nodes: 164765 (Avg-Speed 2353.0 n/s); Evaluated States: 823164
+ g(n)= 140.0 h(n)=38.0
+ g(n)= 141.0 h(n)=33.0
+ g(n)= 142.0 h(n)=28.0
+ g(n)= 149.0 h(n)=24.0
+ g(n)= 150.0 h(n)=23.0
+ g(n)= 155.0 h(n)=21.0
+ g(n)= 158.0 h(n)=17.0
+ g(n)= 169.0 h(n)=13.0
+ g(n)= 174.0 h(n)=12.0
+ g(n)= 176.0 h(n)=8.0
+ g(n)= 184.0 h(n)=5.0
+ g(n)= 185.0 h(n)=4.0
+ g(n)= 191.0 h(n)=3.0
+ g(n)= 195.0 h(n)=1.0
+ g(n)= 196.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink3 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_cold_drink drink1 br)
+6.0: -----waiting---- [9.0]
+9.0: (make_cold_drink drink4 br)
+9.0: -----waiting---- [12.0]
+12.0: (make_warm_drink drink6 br)
+12.0: -----waiting---- [17.0]
+17.0: (make_warm_drink drink5 br)
+17.0: -----waiting---- [22.0]
+22.0: (make_warm_drink drink7 br)
+22.0: -----waiting---- [27.0]
+27.0: (make_warm_drink drink8 br)
+27.0: -----waiting---- [32.0]
+32.0: (get_drink w1 drink1 br)
+32.0: (move w1 br table1)
+32.0: -----waiting---- [33.0]
+33.0: (move w1 table1 table4)
+33.0: -----waiting---- [33.5]
+33.5: (start_cleaning w1 table4)
+33.5: -----waiting---- [35.5]
+35.5: (serve w1 drink1 table4)
+35.5: (move w1 table4 table1)
+35.5: -----waiting---- [36.0]
+36.0: (move w1 table1 br)
+36.0: -----waiting---- [37.0]
+37.0: (get_drink w1 drink4 br)
+37.0: (move w1 br table1)
+37.0: -----waiting---- [38.0]
+38.0: (serve w1 drink4 table1)
+38.0: (move w1 table1 br)
+38.0: -----waiting---- [39.0]
+39.0: (get_drink w1 drink5 br)
+39.0: (move w1 br table1)
+39.0: -----waiting---- [40.0]
+40.0: (move w1 table1 table3)
+40.0: -----waiting---- [40.5]
+40.5: (serve w1 drink5 table3)
+40.5: (move w1 table3 br)
+40.5: -----waiting---- [42.0]
+42.0: (get_drink w1 drink2 br)
+42.0: (move w1 br table1)
+42.0: -----waiting---- [43.0]
+43.0: (move w1 table1 table4)
+43.0: -----waiting---- [43.5]
+43.5: (serve w1 drink2 table4)
+43.5: (move w1 table4 br)
+43.5: -----waiting---- [45.0]
+45.0: (get_drink w1 drink3 br)
+45.0: (move w1 br table1)
+45.0: -----waiting---- [46.0]
+46.0: (serve w1 drink3 table1)
+46.0: (move w1 table1 br)
+46.0: -----waiting---- [47.0]
+47.0: (biscuit_ready drink3 table1 biscuit4 br)
+47.0: (get_biscuit biscuit4 w1 br table1 drink3)
+47.0: (move w1 br table1)
+47.0: -----waiting---- [48.0]
+48.0: (serve_biscuit w1 biscuit4 table1 drink3)
+48.0: (move w1 table1 br)
+48.0: -----waiting---- [49.0]
+49.0: (biscuit_ready drink4 table1 biscuit3 br)
+49.0: (get_biscuit biscuit3 w1 br table1 drink4)
+49.0: (move w1 br table1)
+49.0: -----waiting---- [50.0]
+50.0: (serve_biscuit w1 biscuit3 table1 drink4)
+50.0: (move w1 table1 br)
+50.0: -----waiting---- [51.0]
+51.0: (biscuit_ready drink1 table4 biscuit2 br)
+51.0: (get_biscuit biscuit2 w1 br table4 drink1)
+51.0: (biscuit_ready drink2 table4 biscuit1 br)
+51.0: (move w1 br table4)
+51.0: -----waiting---- [52.5]
+52.5: (serve_biscuit w1 biscuit2 table4 drink1)
+52.5: (move w1 table4 br)
+52.5: -----waiting---- [54.0]
+54.0: (get_drink w1 drink7 br)
+54.0: (move w1 br table2)
+54.0: -----waiting---- [55.0]
+55.0: (move w1 table2 table3)
+55.0: -----waiting---- [55.5]
+55.5: (serve w1 drink7 table3)
+55.5: (move w1 table3 br)
+55.5: -----waiting---- [57.0]
+57.0: (get_biscuit biscuit1 w1 br table4 drink2)
+57.0: (move w1 br table4)
+57.0: -----waiting---- [58.5]
+58.5: (serve_biscuit w1 biscuit1 table4 drink2)
+58.5: (move w1 table4 table2)
+58.5: -----waiting---- [59.0]
+59.0: (move w1 table2 br)
+59.0: -----waiting---- [60.0]
+60.0: (get_drink w1 drink8 br)
+60.0: (move w1 br table3)
+60.0: -----waiting---- [61.5]
+61.5: (serve w1 drink8 table3)
+61.5: (move w1 table3 table1)
+61.5: -----waiting---- [62.0]
+62.0: (move w1 table1 br)
+62.0: -----waiting---- [63.0]
+63.0: (get_drink w1 drink6 br)
+63.0: (move w1 br table3)
+63.0: -----waiting---- [64.5]
+64.5: (serve w1 drink6 table3)
+
+Plan-Length:235
+Elapsed Time: 64.5
+Metric (Search):196.0
+Planning Time (msec): 71308
+Heuristic Time (msec): 67069
+Search Time (msec): 70910
+Expanded Nodes:170810
+States Evaluated:852150
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1165
+Number of Duplicates detected:307836
