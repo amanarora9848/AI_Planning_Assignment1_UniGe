@@ -4,6 +4,7 @@
     drink1 drink2 drink3 drink4 - drink
     br - bar
     table1 table2 table3 table4 - table
+    o1 o2 - order
 )
 
 (:init
@@ -24,10 +25,13 @@
     (= (size table1) 1) (= (size table2) 1) (= (size table3) 2) (= (size table4) 1)
     (= (time_to_clean table1) 0) (= (time_to_clean table2) 0) (= (time_to_clean table3) 0) (= (time_to_clean table4) 0)
     (clean table1) (clean table2) (clean table4)
+    (destination o1 table4) (destination o2 table1)
+    (elem o1 drink1) (elem o1 drink2) (elem o2 drink3) (elem o2 drink4)
+    (= (biscuit_count o1) 0) (= (biscuit_count o2) 0)
 )
 
 (:goal (and
-    (at drink1 table1) (at drink2 table1) (at drink3 table4) (at drink4 table4)
+    (served o1) (served o2)
     (clean table3)
     (not (using_tray w1))
 ))

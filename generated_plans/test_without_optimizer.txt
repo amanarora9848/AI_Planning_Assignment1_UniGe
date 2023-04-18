@@ -1,7 +1,7 @@
 Domain parsed
 Problem parsed
 Grounding..
-Grounding Time: 36
+Grounding Time: 35
 Aibr Preprocessing
 |F|:38
 |X|:8
@@ -84,9 +84,9 @@ Found Plan:
 Plan-Length:89
 Elapsed Time: 24.5
 Metric (Search):76.0
-Planning Time (msec): 464
-Heuristic Time (msec): 76
-Search Time (msec): 129
+Planning Time (msec): 372
+Heuristic Time (msec): 42
+Search Time (msec): 78
 Expanded Nodes:420
 States Evaluated:1189
 Fixed constraint violations during search (zero-crossing):0
