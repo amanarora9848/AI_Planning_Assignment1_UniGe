@@ -1,3 +1,4 @@
+#!/bin/bash
 plan="planner";
 domain="base.pddl";
 problem="default"
@@ -8,7 +9,7 @@ exec_all=false;
 usage() {
     echo "Execute a single problem [or] all problem files in the current directory"
     echo "usage: generate_plan.sh -p <planner> -o <domain> -f <problem> -m <memory> -z"
-    echo " [or]: generate_plan.sh -p <planner> -o <domain> -a -m <memory> -z"
+    echo " [or]: generate_plan.sh -p <planner> -o <domain> -az -m <memory>"
     echo
     echo "  -p <planner>    (mandatory) planner [path] to use"
     echo "  -o <domain>     (optional) domain [path] to use, default is base.pddl"
@@ -41,6 +42,7 @@ done
 [[ "$exec_all" == "false" ]] && [[ "$problem" == "default" ]] && { echo "Please provide the problem file using option '-f <problem_file>'"; exit 1; }
 
 config="Xmx${memory}m"
+echo "config: $config";
 
 echo "planner: $plan";
 
@@ -58,6 +60,7 @@ if $exec_all; then
         echo "problem: $problem";
         problem_name=( $(grep -Eo '[A-Za-z0-9]+' <<< "${i}") )
         execute_plan
+        sleep 2
     done
     else
         echo "problem: $problem";
