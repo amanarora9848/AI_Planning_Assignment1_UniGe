@@ -1,4 +1,4 @@
-plan="enhsp-20.jar";
+plan="planner";
 domain="base.pddl";
 problem="default"
 memory=5000;
@@ -6,17 +6,16 @@ optimize=false;
 exec_all=false;
 
 usage() {
-    echo "Execute a single problem"
+    echo "Execute a single problem [or] all problem files in the current directory"
     echo "usage: generate_plan.sh -p <planner> -o <domain> -f <problem> -m <memory> -z"
-    echo "Execute all problems, with optional flags"
-    echo "   or: generate_plan.sh -p <planner> -o <domain> -a -m <memory> -z"
+    echo " [or]: generate_plan.sh -p <planner> -o <domain> -a -m <memory> -z"
     echo
-    echo "  -p <planner>    planner [path] to use - MANDATORY"
-    echo "  -o <domain>     domain [path] to use - optional, default is base.pddl"
-    echo "  -f <problem>    problem [path] to use"
-    echo "  -m <memory>     specify java memory allowance, optional, default is 5000"
-    echo "  -z              uses optimizer if flag is passed, optional, default is false"
-    echo "  -a              executes all problems if flag is passed, optional, default is false"
+    echo "  -p <planner>    (mandatory) planner [path] to use"
+    echo "  -o <domain>     (optional) domain [path] to use, default is base.pddl"
+    echo "  -f <problem>    problem [path] to use. Mandatory if '-a' flag is not passed"
+    echo "  -m <memory>     (optional) specify java memory allowance, default is 5000"
+    echo "  -z              (optional) uses optimizer (opt-blind) if flag is passed, default is false"
+    echo "  -a              (optional) executes all problems if flag is passed, default is false"
     echo "  -h              display help"
 }
 
@@ -38,10 +37,8 @@ while getopts "p:o:f:m:zah" flag; do
 done
 
 [[ "$no_args" == "true" ]] && { usage; exit 1; }
-[[ "$exec_all" == "false" ]] && [[ "$problem" == "default" ]] && { echo "Please specify a problem"; exit 1; }
-
-problem_name=( $(grep -Eo '[A-Za-z0-9]+' <<< "${problem}") )
-echo $problem_name
+[[ "$plan" == "planner" ]] && { echo "Please provide a planner path using option '-p <planner_path>'"; exit 1; }
+[[ "$exec_all" == "false" ]] && [[ "$problem" == "default" ]] && { echo "Please provide the problem file using option '-f <problem_file>'"; exit 1; }
 
 config="Xmx${memory}m"
 
@@ -64,5 +61,7 @@ if $exec_all; then
     done
     else
         echo "problem: $problem";
+        problem_name=( $(grep -Eo '[A-Za-z0-9]+' <<< "${problem}") )
+        echo $problem_name
         execute_plan
 fi
