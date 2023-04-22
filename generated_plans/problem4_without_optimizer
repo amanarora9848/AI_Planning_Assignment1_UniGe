@@ -1,0 +1,205 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 196
+Aibr Preprocessing
+|F|:77
+|X|:15
+Aibr Preprocessing
+|A|:52
+|P|:21
+|E|:24
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 31
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=175.0
+ g(n)= 7.0 h(n)=171.0
+ g(n)= 14.0 h(n)=167.0
+ g(n)= 21.0 h(n)=163.0
+ g(n)= 28.0 h(n)=159.0
+ g(n)= 39.0 h(n)=155.0
+ g(n)= 50.0 h(n)=151.0
+ g(n)= 61.0 h(n)=147.0
+ g(n)= 72.0 h(n)=143.0
+-------------Time: 10s ; Expanded Nodes: 30900 (Avg-Speed 3090.0 n/s); Evaluated States: 154947
+-------------Time: 20s ; Expanded Nodes: 65873 (Avg-Speed 3293.0 n/s); Evaluated States: 329776
+-------------Time: 30s ; Expanded Nodes: 98360 (Avg-Speed 3278.0 n/s); Evaluated States: 492131
+-------------Time: 40s ; Expanded Nodes: 134262 (Avg-Speed 3356.0 n/s); Evaluated States: 671500
+ g(n)= 87.0 h(n)=139.0
+ g(n)= 101.0 h(n)=134.0
+ g(n)= 102.0 h(n)=122.0
+ g(n)= 115.0 h(n)=113.0
+ g(n)= 121.0 h(n)=112.0
+ g(n)= 122.0 h(n)=104.0
+ g(n)= 129.0 h(n)=103.0
+ g(n)= 130.0 h(n)=102.0
+ g(n)= 131.0 h(n)=101.0
+ g(n)= 132.0 h(n)=100.0
+ g(n)= 133.0 h(n)=99.0
+ g(n)= 134.0 h(n)=98.0
+ g(n)= 135.0 h(n)=97.0
+ g(n)= 136.0 h(n)=95.0
+ g(n)= 141.0 h(n)=87.0
+ g(n)= 144.0 h(n)=86.0
+ g(n)= 145.0 h(n)=85.0
+ g(n)= 146.0 h(n)=84.0
+ g(n)= 147.0 h(n)=83.0
+ g(n)= 148.0 h(n)=82.0
+ g(n)= 149.0 h(n)=81.0
+ g(n)= 150.0 h(n)=80.0
+ g(n)= 151.0 h(n)=78.0
+ g(n)= 156.0 h(n)=70.0
+ g(n)= 159.0 h(n)=69.0
+ g(n)= 160.0 h(n)=68.0
+ g(n)= 161.0 h(n)=67.0
+ g(n)= 162.0 h(n)=66.0
+ g(n)= 163.0 h(n)=65.0
+ g(n)= 164.0 h(n)=64.0
+ g(n)= 165.0 h(n)=63.0
+ g(n)= 166.0 h(n)=61.0
+ g(n)= 168.0 h(n)=57.0
+ g(n)= 171.0 h(n)=53.0
+ g(n)= 179.0 h(n)=45.0
+ g(n)= 180.0 h(n)=42.0
+ g(n)= 181.0 h(n)=41.0
+ g(n)= 182.0 h(n)=40.0
+ g(n)= 183.0 h(n)=39.0
+ g(n)= 184.0 h(n)=38.0
+ g(n)= 185.0 h(n)=37.0
+ g(n)= 186.0 h(n)=36.0
+ g(n)= 187.0 h(n)=35.0
+ g(n)= 188.0 h(n)=33.0
+ g(n)= 189.0 h(n)=32.0
+ g(n)= 190.0 h(n)=31.0
+ g(n)= 191.0 h(n)=30.0
+ g(n)= 192.0 h(n)=29.0
+ g(n)= 193.0 h(n)=28.0
+ g(n)= 194.0 h(n)=27.0
+ g(n)= 195.0 h(n)=26.0
+ g(n)= 196.0 h(n)=25.0
+ g(n)= 197.0 h(n)=23.0
+ g(n)= 197.0 h(n)=17.0
+ g(n)= 198.0 h(n)=14.0
+ g(n)= 199.0 h(n)=13.0
+ g(n)= 200.0 h(n)=12.0
+ g(n)= 201.0 h(n)=11.0
+ g(n)= 202.0 h(n)=10.0
+ g(n)= 203.0 h(n)=9.0
+ g(n)= 204.0 h(n)=8.0
+ g(n)= 205.0 h(n)=7.0
+ g(n)= 206.0 h(n)=5.0
+ g(n)= 213.0 h(n)=3.0
+ g(n)= 214.0 h(n)=2.0
+ g(n)= 224.0 h(n)=1.0
+ g(n)= 236.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink8 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink5 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_cold_drink drink6 br)
+6.0: -----waiting---- [9.0]
+9.0: (make_cold_drink drink7 br)
+9.0: -----waiting---- [12.0]
+12.0: (make_warm_drink drink1 br)
+12.0: -----waiting---- [17.0]
+17.0: (make_warm_drink drink2 br)
+17.0: -----waiting---- [22.0]
+22.0: (make_warm_drink drink4 br)
+22.0: -----waiting---- [27.0]
+27.0: (make_warm_drink drink3 br)
+27.0: -----waiting---- [32.0]
+32.0: (move w br table1)
+32.0: -----waiting---- [33.0]
+33.0: (move w table1 table4)
+33.0: -----waiting---- [33.5]
+33.5: (start_cleaning w table4)
+33.5: -----waiting---- [35.5]
+35.5: (move w table4 br)
+35.5: -----waiting---- [37.0]
+37.0: (get_drink w drink6 br)
+37.0: (move w br table1)
+37.0: -----waiting---- [38.0]
+38.0: (serve w drink6 table1 o1)
+38.0: -----waiting---- [41.0]
+41.0: (move w table1 br)
+41.0: -----waiting---- [42.0]
+42.0: (get_drink w drink5 br)
+42.0: (move w br table1)
+42.0: -----waiting---- [43.0]
+43.0: (serve w drink5 table1 o1)
+43.0: -----waiting---- [47.0]
+47.0: (check_consumed_order o1 table1)
+47.0: (start_cleaning w table1)
+47.0: -----waiting---- [49.0]
+49.0: (move w table1 br)
+49.0: -----waiting---- [50.0]
+50.0: (get_drink w drink3 br)
+50.0: (move w br table3)
+50.0: -----waiting---- [51.5]
+51.5: (serve w drink3 table3 o3)
+51.5: -----waiting---- [54.0]
+54.0: (move w table3 br)
+54.0: -----waiting---- [55.5]
+55.5: (get_drink w drink2 br)
+55.5: (move w br table3)
+55.5: -----waiting---- [57.0]
+57.0: (serve w drink2 table3 o3)
+57.0: -----waiting---- [59.5]
+59.5: (move w table3 br)
+59.5: -----waiting---- [61.0]
+61.0: (get_drink w drink1 br)
+61.0: (move w br table3)
+61.0: -----waiting---- [62.5]
+62.5: (serve w drink1 table3 o3)
+62.5: -----waiting---- [65.0]
+65.0: (move w table3 table1)
+65.0: -----waiting---- [65.5]
+65.5: (move w table1 br)
+65.5: -----waiting---- [66.5]
+66.5: (equip_tray w br)
+66.5: (get_drink w drink7 br)
+66.5: (get_drink w drink4 br)
+66.5: (get_drink w drink8 br)
+66.5: (move w br table4)
+66.5: -----waiting---- [69.5]
+69.5: (serve w drink7 table4 o2)
+69.5: -----waiting---- [72.0]
+72.0: (serve w drink8 table4 o2)
+72.0: -----waiting---- [76.0]
+76.0: (move w table4 table3)
+76.0: -----waiting---- [77.0]
+77.0: (serve w drink4 table3 o3)
+77.0: -----waiting---- [81.0]
+81.0: (move w table3 br)
+81.0: -----waiting---- [84.0]
+84.0: (unequip_tray w br)
+84.0: (move w br table4)
+84.0: -----waiting---- [85.5]
+85.5: (check_consumed_order o2 table4)
+85.5: (start_cleaning w table4)
+85.5: -----waiting---- [87.5]
+87.5: (move w table4 table3)
+87.5: -----waiting---- [88.0]
+88.0: (check_consumed_order o3 table3)
+88.0: (start_cleaning w table3)
+88.0: -----waiting---- [92.0]
+
+Plan-Length:275
+Elapsed Time: 92.0
+Metric (Search):236.0
+Planning Time (msec): 48312
+Heuristic Time (msec): 40490
+Search Time (msec): 47208
+Expanded Nodes:156869
+States Evaluated:781471
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:289710
