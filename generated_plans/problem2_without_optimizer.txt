@@ -1,0 +1,146 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 139
+Aibr Preprocessing
+|F|:63
+|X|:8
+Aibr Preprocessing
+|A|:68
+|P|:10
+|E|:16
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 33
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=30.0
+ g(n)= 5.0 h(n)=28.0
+ g(n)= 13.0 h(n)=24.0
+ g(n)= 20.0 h(n)=22.0
+ g(n)= 32.0 h(n)=20.0
+ g(n)= 43.0 h(n)=18.0
+-------------Time: 10s ; Expanded Nodes: 45311 (Avg-Speed 4531.0 n/s); Evaluated States: 138418
+-------------Time: 20s ; Expanded Nodes: 97364 (Avg-Speed 4868.0 n/s); Evaluated States: 285135
+-------------Time: 30s ; Expanded Nodes: 149955 (Avg-Speed 4998.0 n/s); Evaluated States: 430369
+-------------Time: 40s ; Expanded Nodes: 199467 (Avg-Speed 4986.0 n/s); Evaluated States: 568954
+-------------Time: 50s ; Expanded Nodes: 245262 (Avg-Speed 4905.0 n/s); Evaluated States: 695899
+-------------Time: 60s ; Expanded Nodes: 284093 (Avg-Speed 4734.0 n/s); Evaluated States: 821683
+-------------Time: 70s ; Expanded Nodes: 326541 (Avg-Speed 4664.0 n/s); Evaluated States: 943032
+-------------Time: 80s ; Expanded Nodes: 363970 (Avg-Speed 4549.0 n/s); Evaluated States: 1070009
+-------------Time: 90s ; Expanded Nodes: 400040 (Avg-Speed 4444.0 n/s); Evaluated States: 1179138
+-------------Time: 100s ; Expanded Nodes: 440032 (Avg-Speed 4400.0 n/s); Evaluated States: 1299456
+-------------Time: 110s ; Expanded Nodes: 474563 (Avg-Speed 4314.0 n/s); Evaluated States: 1420780
+-------------Time: 120s ; Expanded Nodes: 516138 (Avg-Speed 4301.0 n/s); Evaluated States: 1538703
+-------------Time: 130s ; Expanded Nodes: 553678 (Avg-Speed 4259.0 n/s); Evaluated States: 1658005
+-------------Time: 140s ; Expanded Nodes: 587051 (Avg-Speed 4193.0 n/s); Evaluated States: 1757472
+-------------Time: 150s ; Expanded Nodes: 624367 (Avg-Speed 4162.0 n/s); Evaluated States: 1860237
+-------------Time: 160s ; Expanded Nodes: 662738 (Avg-Speed 4142.0 n/s); Evaluated States: 1970580
+-------------Time: 170s ; Expanded Nodes: 695947 (Avg-Speed 4093.0 n/s); Evaluated States: 2084938
+-------------Time: 180s ; Expanded Nodes: 730829 (Avg-Speed 4060.0 n/s); Evaluated States: 2192069
+-------------Time: 190s ; Expanded Nodes: 770081 (Avg-Speed 4053.0 n/s); Evaluated States: 2307403
+-------------Time: 200s ; Expanded Nodes: 804898 (Avg-Speed 4024.0 n/s); Evaluated States: 2410046
+-------------Time: 210s ; Expanded Nodes: 840192 (Avg-Speed 4000.0 n/s); Evaluated States: 2511670
+-------------Time: 220s ; Expanded Nodes: 877148 (Avg-Speed 3987.0 n/s); Evaluated States: 2621198
+-------------Time: 230s ; Expanded Nodes: 915241 (Avg-Speed 3979.0 n/s); Evaluated States: 2730196
+-------------Time: 240s ; Expanded Nodes: 949034 (Avg-Speed 3954.0 n/s); Evaluated States: 2829942
+-------------Time: 250s ; Expanded Nodes: 980994 (Avg-Speed 3923.0 n/s); Evaluated States: 2927195
+-------------Time: 260s ; Expanded Nodes: 1007134 (Avg-Speed 3873.0 n/s); Evaluated States: 3004374
+-------------Time: 270s ; Expanded Nodes: 1040635 (Avg-Speed 3854.0 n/s); Evaluated States: 3103350
+-------------Time: 280s ; Expanded Nodes: 1076946 (Avg-Speed 3846.0 n/s); Evaluated States: 3210206
+-------------Time: 290s ; Expanded Nodes: 1113362 (Avg-Speed 3839.0 n/s); Evaluated States: 3315356
+-------------Time: 300s ; Expanded Nodes: 1147406 (Avg-Speed 3824.0 n/s); Evaluated States: 3416959
+-------------Time: 310s ; Expanded Nodes: 1170402 (Avg-Speed 3775.0 n/s); Evaluated States: 3484695
+-------------Time: 320s ; Expanded Nodes: 1206228 (Avg-Speed 3769.0 n/s); Evaluated States: 3595602
+-------------Time: 330s ; Expanded Nodes: 1248522 (Avg-Speed 3783.0 n/s); Evaluated States: 3705112
+-------------Time: 340s ; Expanded Nodes: 1273189 (Avg-Speed 3744.0 n/s); Evaluated States: 3784076
+-------------Time: 350s ; Expanded Nodes: 1289032 (Avg-Speed 3682.0 n/s); Evaluated States: 3833375
+-------------Time: 360s ; Expanded Nodes: 1311181 (Avg-Speed 3642.0 n/s); Evaluated States: 3888414
+-------------Time: 370s ; Expanded Nodes: 1338639 (Avg-Speed 3617.0 n/s); Evaluated States: 3960452
+-------------Time: 380s ; Expanded Nodes: 1374249 (Avg-Speed 3616.0 n/s); Evaluated States: 4049142
+-------------Time: 390s ; Expanded Nodes: 1413686 (Avg-Speed 3624.0 n/s); Evaluated States: 4159324
+-------------Time: 400s ; Expanded Nodes: 1450614 (Avg-Speed 3626.0 n/s); Evaluated States: 4275459
+-------------Time: 410s ; Expanded Nodes: 1488666 (Avg-Speed 3630.0 n/s); Evaluated States: 4387613
+-------------Time: 420s ; Expanded Nodes: 1533178 (Avg-Speed 3650.0 n/s); Evaluated States: 4504424
+ g(n)= 44.0 h(n)=14.0
+ g(n)= 45.0 h(n)=13.0
+ g(n)= 56.0 h(n)=10.0
+ g(n)= 57.0 h(n)=9.0
+ g(n)= 68.0 h(n)=6.0
+ g(n)= 69.0 h(n)=5.0
+ g(n)= 86.0 h(n)=4.0
+ g(n)= 90.0 h(n)=2.0
+ g(n)= 91.0 h(n)=1.0
+ g(n)= 92.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink2 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink1 br)
+3.0: -----waiting---- [4.0]
+4.0: (start_cleaning w2 table1)
+4.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink4 br)
+6.0: -----waiting---- [11.0]
+11.0: (make_warm_drink drink3 br)
+11.0: -----waiting---- [14.0]
+14.0: (move w1 br table1)
+14.0: -----waiting---- [15.0]
+15.0: (move w2 table1 br)
+15.0: -----waiting---- [16.0]
+16.0: (get_drink w2 drink4 br o)
+16.0: (move w2 br table3)
+16.0: -----waiting---- [17.0]
+17.0: (move w1 table1 table4)
+17.0: -----waiting---- [17.5]
+17.5: (serve w2 drink4 table3 o)
+17.5: (move w2 table3 table2)
+17.5: -----waiting---- [18.0]
+18.0: (move w2 table2 br)
+18.0: -----waiting---- [19.0]
+19.0: (get_drink w2 drink2 br o)
+19.0: (move w2 br table3)
+19.0: -----waiting---- [20.0]
+20.0: (move w1 table4 table3)
+20.0: -----waiting---- [20.5]
+20.5: (serve w2 drink2 table3 o)
+20.5: (move w2 table3 table2)
+20.5: -----waiting---- [21.0]
+21.0: (move w2 table2 br)
+21.0: -----waiting---- [22.0]
+22.0: (get_drink w2 drink3 br o)
+22.0: (move w2 br table3)
+22.0: -----waiting---- [23.5]
+23.5: (serve w2 drink3 table3 o)
+23.5: (move w1 table3 br)
+23.5: -----waiting---- [25.0]
+25.0: (move w1 br table2)
+25.0: (move w2 table3 table1)
+25.0: -----waiting---- [26.0]
+26.0: (move w1 table2 br)
+26.0: -----waiting---- [27.0]
+27.0: (move w1 br table3)
+27.0: -----waiting---- [27.5]
+27.5: (move w2 table1 br)
+27.5: -----waiting---- [28.5]
+28.5: (get_drink w2 drink1 br o)
+28.5: (move w2 br table3)
+28.5: -----waiting---- [30.0]
+30.0: (serve w2 drink1 table3 o)
+30.0: (check_order w2 o)
+
+Plan-Length:115
+Elapsed Time: 30.0
+Metric (Search):92.0
+Planning Time (msec): 427201
+Heuristic Time (msec): 363339
+Search Time (msec): 426348
+Expanded Nodes:1568349
+States Evaluated:4583450
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:5165037

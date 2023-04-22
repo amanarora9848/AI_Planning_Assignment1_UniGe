@@ -14,14 +14,13 @@
     (:predicates
 
         ;waiter
-        (holding ?w - waiter ?d - drink)
         (moving ?w - waiter ?l - location)
         (using_tray ?w - waiter)
         (cleaning ?w - waiter ?t - table)
         (free ?w - waiter)
 
         ;common
-        (at ?x ?l - location)
+        (at ?x ?y)
         (served ?x)
 
         ;drink
@@ -90,18 +89,18 @@
         :precondition (and (not (empty ?d)) (at ?d ?br) (at ?w ?br) (< (carrying ?w) (capacity ?w)) (elem ?o ?d)
             (or (assigned ?o ?w) (forall (?x - waiter) (not (assigned ?o ?x))))
         )
-        :effect (and (holding ?w ?d) (increase (carrying ?w) 1) (not (at ?d ?br)) (assigned ?o ?w))
+        :effect (and (at ?d ?w) (increase (carrying ?w) 1) (not (at ?d ?br)) (assigned ?o ?w))
     )
 
     (:action serve
         :parameters (?w - waiter ?d - drink ?t - table ?o - order)
-        :precondition (and (holding ?w ?d) (at ?w ?t) (destination ?o ?t) (elem ?o ?d) (not (served ?d)))
-        :effect (and (decrease (carrying ?w) 1) (not (holding ?w ?d)) (at ?d ?t) (served ?d))
+        :precondition (and (at ?d ?w) (at ?w ?t) (destination ?o ?t) (elem ?o ?d) (not (served ?d)))
+        :effect (and (decrease (carrying ?w) 1) (not (at ?d ?w)) (at ?d ?t) (served ?d))
     )
 
     (:action check_order
         :parameters (?w - waiter ?o - order)
-        :precondition (and (forall (?d - drink) (or (not (elem ?o ?d)) (served ?d))) (assigned ?o ?w))
+        :precondition (and (forall (?d - drink) (or (not (elem ?o ?d)) (served ?d))) (assigned ?o ?w) (free ?w))
         :effect (and (served ?o))
     )
     
