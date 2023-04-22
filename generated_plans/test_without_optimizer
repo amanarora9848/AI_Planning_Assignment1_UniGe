@@ -1,0 +1,104 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 108
+Aibr Preprocessing
+|F|:35
+|X|:9
+Aibr Preprocessing
+|A|:21
+|P|:10
+|E|:11
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 96
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=65.0
+ g(n)= 7.0 h(n)=61.0
+ g(n)= 14.0 h(n)=57.0
+ g(n)= 25.0 h(n)=53.0
+ g(n)= 34.0 h(n)=45.0
+ g(n)= 35.0 h(n)=42.0
+ g(n)= 36.0 h(n)=41.0
+ g(n)= 37.0 h(n)=40.0
+ g(n)= 38.0 h(n)=39.0
+ g(n)= 39.0 h(n)=38.0
+ g(n)= 40.0 h(n)=37.0
+ g(n)= 41.0 h(n)=36.0
+ g(n)= 42.0 h(n)=35.0
+ g(n)= 43.0 h(n)=33.0
+ g(n)= 44.0 h(n)=32.0
+ g(n)= 45.0 h(n)=31.0
+ g(n)= 46.0 h(n)=30.0
+ g(n)= 47.0 h(n)=29.0
+ g(n)= 48.0 h(n)=28.0
+ g(n)= 49.0 h(n)=27.0
+ g(n)= 50.0 h(n)=26.0
+ g(n)= 51.0 h(n)=25.0
+ g(n)= 52.0 h(n)=23.0
+ g(n)= 52.0 h(n)=17.0
+ g(n)= 53.0 h(n)=14.0
+ g(n)= 54.0 h(n)=13.0
+ g(n)= 55.0 h(n)=12.0
+ g(n)= 56.0 h(n)=11.0
+ g(n)= 57.0 h(n)=10.0
+ g(n)= 58.0 h(n)=9.0
+ g(n)= 59.0 h(n)=8.0
+ g(n)= 60.0 h(n)=7.0
+ g(n)= 61.0 h(n)=5.0
+ g(n)= 66.0 h(n)=3.0
+ g(n)= 67.0 h(n)=2.0
+ g(n)= 76.0 h(n)=1.0
+ g(n)= 84.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (equip_tray w br)
+11.0: (get_drink w drink3 br)
+11.0: (get_drink w drink2 br)
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [13.0]
+13.0: (serve w drink3 table1 o1)
+13.0: -----waiting---- [15.5]
+15.5: (serve w drink1 table1 o1)
+15.5: -----waiting---- [19.5]
+19.5: (move w table1 table2)
+19.5: -----waiting---- [20.5]
+20.5: (serve w drink2 table2 o2)
+20.5: -----waiting---- [24.5]
+24.5: (move w table2 br)
+24.5: -----waiting---- [26.5]
+26.5: (unequip_tray w br)
+26.5: (move w br table1)
+26.5: -----waiting---- [27.5]
+27.5: (check_consumed_order o1 table1)
+27.5: (start_cleaning w table1)
+27.5: -----waiting---- [29.5]
+29.5: (move w table1 table2)
+29.5: -----waiting---- [30.0]
+30.0: (check_consumed_order o2 table2)
+30.0: (start_cleaning w table2)
+30.0: -----waiting---- [32.0]
+
+Plan-Length:97
+Elapsed Time: 32.0
+Metric (Search):84.0
+Planning Time (msec): 1708
+Heuristic Time (msec): 213
+Search Time (msec): 436
+Expanded Nodes:455
+States Evaluated:1327
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:411
