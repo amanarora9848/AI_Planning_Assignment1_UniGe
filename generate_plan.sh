@@ -1,0 +1,114 @@
+
+Skip to content
+
+    Pricing
+
+Sign in
+Sign up
+amanarora9848 /
+AI_Planning_Assignment1_UniGe
+Public
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+
+    Insights
+
+AI_Planning_Assignment1_UniGe/generate_plan.sh
+@amanarora9848
+amanarora9848 update generate_plan.sh, readme
+Latest commit 9de2f20 Apr 18, 2023
+History
+1 contributor
+executable file 70 lines (63 sloc) 2.33 KB
+#!/bin/bash
+plan="planner";
+domain="base.pddl";
+problem="default"
+memory=5000;
+optimize=false;
+exec_all=false;
+
+usage() {
+    echo "Execute a single problem [or] all problem files in the current directory"
+    echo "usage: generate_plan.sh -p <planner> -o <domain> -f <problem> -m <memory> -z"
+    echo " [or]: generate_plan.sh -p <planner> -o <domain> -az -m <memory>"
+    echo
+    echo "  -p <planner>    (mandatory) planner [path] to use"
+    echo "  -o <domain>     (optional) domain [path] to use, default is base.pddl"
+    echo "  -f <problem>    problem [path] to use. Mandatory if '-a' flag is not passed"
+    echo "  -m <memory>     (optional) specify java memory allowance, default is 5000"
+    echo "  -z              (optional) uses optimizer (opt-blind) if flag is passed, default is false"
+    echo "  -a              (optional) executes all problems if flag is passed, default is false"
+    echo "  -h              display help"
+}
+
+no_args="true";
+while getopts "p:o:f:m:zah" flag; do
+    case $flag in
+        p) plan=${OPTARG} ;;
+        o) domain=${OPTARG} ;;
+        f) problem=${OPTARG} ;;
+        m) memory=${OPTARG} ;;
+        z) optimize='true' ;;
+        a) exec_all='true' ;;
+        h) usage
+           exit;;
+        *) usage
+           exit;;
+    esac
+    no_args="false";
+done
+
+[[ "$no_args" == "true" ]] && { usage; exit 1; }
+[[ "$plan" == "planner" ]] && { echo "Please provide a planner path using option '-p <planner_path>'"; exit 1; }
+[[ "$exec_all" == "false" ]] && [[ "$problem" == "default" ]] && { echo "Please provide the problem file using option '-f <problem_file>'"; exit 1; }
+
+config="Xmx${memory}m"
+echo "config: $config";
+
+echo "planner: $plan";
+
+execute_plan() {
+    if $optimize; then
+        java -$config -jar $plan -o $domain -f "${problem}" -delta 0.5 -planner opt-blind > generated_plans/${problem_name}_with_optimizer.txt
+    else
+        java -$config -jar $plan -o $domain -f "${problem}" -delta 0.5 > generated_plans/${problem_name}_without_optimizer.txt
+    fi
+}
+
+if $exec_all; then
+    for i in problem*; do
+        problem=$i
+        echo "problem: $problem";
+        problem_name=( $(grep -Eo '[A-Za-z0-9]+' <<< "${i}") )
+        execute_plan
+        sleep 2
+    done
+    else
+        echo "problem: $problem";
+        problem_name=( $(grep -Eo '[A-Za-z0-9]+' <<< "${problem}") )
+        echo $problem_name
+        execute_plan
+fi
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
+AI_Planning_Assignment1_UniGe/generate_plan.sh at main · amanarora9848/AI_Planning_Assignment1_UniGe · GitHub
