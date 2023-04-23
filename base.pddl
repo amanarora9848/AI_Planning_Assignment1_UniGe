@@ -13,14 +13,13 @@
     (:predicates
 
         ;waiter
-        (holding ?w - waiter ?d - drink)
         (moving ?w - waiter ?l - location)
         (using_tray ?w - waiter)
         (cleaning ?w - waiter ?t - table)
         (free ?w - waiter)
 
         ;common
-        (at ?x ?l - location)
+        (at ?x ?y)
 
         ;drink
         (empty ?d - drink)
@@ -75,13 +74,13 @@
     (:action get_drink
         :parameters (?w - waiter ?d - drink ?br - bar)
         :precondition (and (not (empty ?d)) (at ?d ?br) (at ?w ?br) (< (carrying ?w) (capacity ?w)))
-        :effect (and (holding ?w ?d) (increase (carrying ?w) 1) (not (at ?d ?br)))
+        :effect (and (at ?d ?w) (increase (carrying ?w) 1) (not (at ?d ?br)))
     )
 
     (:action serve
         :parameters (?w - waiter ?d - drink ?t - table)
-        :precondition (and (holding ?w ?d) (at ?w ?t))
-        :effect (and (decrease (carrying ?w) 1) (not (holding ?w ?d)) (at ?d ?t))
+        :precondition (and (at ?d ?w) (at ?w ?t))
+        :effect (and (decrease (carrying ?w) 1) (not (at ?d ?w)) (at ?d ?t))
     )
 
     (:action start_cleaning
