@@ -41,16 +41,16 @@ done
 [[ "$plan" == "planner" ]] && { echo "Please provide a planner path using option '-p <planner_path>'"; exit 1; }
 [[ "$exec_all" == "false" ]] && [[ "$problem" == "default" ]] && { echo "Please provide the problem file using option '-f <problem_file>'"; exit 1; }
 
-config="Xmx${memory}m"
-echo "config: $config";
+configX="Xmx${memory}m"
+configS="Xms${memory}m"
 
 echo "planner: $plan";
 
 execute_plan() {
     if $optimize; then
-        java -$config -jar $plan -o $domain -f "${problem}" -delta 0.5 -planner opt-blind > generated_plans/${problem_name}_with_optimizer.txt
+        java -$configS -$configX -XX:+AlwaysPreTouch -jar $plan -o $domain -f "${problem}" -delta 0.5 -planner opt-blind > generated_plans/${problem_name}_with_optimizer.txt
     else
-        java -$config -jar $plan -o $domain -f "${problem}" -delta 0.5 > generated_plans/${problem_name}_without_optimizer.txt
+        java -$configS -$configX -XX:+AlwaysPreTouch -jar $plan -o $domain -f "${problem}" -delta 0.5 > generated_plans/${problem_name}_without_optimizer.txt
     fi
 }
 
