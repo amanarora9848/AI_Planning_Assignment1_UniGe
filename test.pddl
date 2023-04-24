@@ -1,26 +1,27 @@
 (define (problem test) (:domain base)
 (:objects
     w - waiter
-    drink1 - drink
+    drink1 drink2 drink3 - drink
     br - bar
-    table1 - table
+    table1 table2 - table
 )
 
 (:init
     (at w br) (free w)
-    (at drink1 br)
-    (empty drink1)
-    (= (dist br table1) 2) (= (dist table1 br) 2)
+    (at drink1 br) (at drink2 br) (at drink3 br)
+    (empty drink1) (empty drink2) (empty drink3)
+    (warm drink3)
+    (= (dist br table1) 2) (= (dist table1 br) 2) (= (dist br table2) 2) (= (dist table2 br) 2) (= (dist table2 table1) 1) (= (dist table1 table2) 1)
     (= (capacity w) 1)
     (= (carrying w) 0)
     (= (preparation_time) 0)
     (= (dist_to_goal w) 0)
-    (= (size table1) 1)
+    (= (size table1) 1) (= (size table2) 1)
 )
 
 (:goal (and
-    (at drink1 table1)
-    (clean table1)
+    (at drink1 table1) (at drink2 table2) (at drink3 table1)
+    (clean table1) (clean table2)
     (not (using_tray w))
 ))
 
