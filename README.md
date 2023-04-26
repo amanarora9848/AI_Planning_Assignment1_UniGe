@@ -19,7 +19,7 @@ The domain is PDDL+ domain and requires a planning engine to be installed. To do
 
 Clone the repository:
 ```bash
-git clone https://github.com/amanarora9848/AI_Planning_Assignment1_UniGe.git
+git clone https://github.com/amanarora9848/robocafe_AI_task_planning.git
 ```
 
 ### Generating Plans:
