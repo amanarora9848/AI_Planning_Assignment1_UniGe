@@ -2,7 +2,7 @@
 import sys
 import pprint
 from math import sqrt
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 plan_metrics = {
     'Grounding Time': [],
@@ -47,8 +47,9 @@ for metric in plan_metrics.keys():
     mean_squared_error_dict[metric] = sqrt(mean_squared_error_dict[metric] / len(plan_metrics[metric]))
 
 # Print the results
-print("Number of observations: ", observations)
 print("\n")
+print("Number of observations: ", observations)
+print("")
 print('Mean values: ')
 pprint.pprint(mean_dict)
 print("\n")
@@ -57,8 +58,10 @@ pprint.pprint(mean_squared_error_dict)
 
 # xm, ym = zip(*sorted(mean_dict.items()))
 # plt.plot(xm, ym)
+# plt.xticks(rotation='vertical')
 # plt.show()
 
 # xsq, ysq = zip(*sorted(mean_squared_error_dict.items()))
 # plt.plot(xsq, ysq)
+# plt.xticks(rotation='vertical')
 # plt.show()

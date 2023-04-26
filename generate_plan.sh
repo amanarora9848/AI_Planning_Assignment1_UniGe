@@ -52,6 +52,7 @@ configS="Xms${memory}m"
 
 echo "planner: $plan";
 echo "planner configuration: $planner";
+[ -d generated_plans ] || mkdir generated_plans
 
 # Function to execute the planner and write output to a file
 execute_plan() {
@@ -123,7 +124,11 @@ else
         execute_plan true
     done
     show_progress $tot_prog $tot_prog;
-fi
 
-# Calculate metrics
-./calculate_metrics.py $filename > generated_metrics/metrics_${problem_name}_${planner}.txt
+    if [ $tot_prog -gt 1 ]; then
+        # Calculate metrics
+        [ -d generated_metrics ] || mkdir generated_metrics
+        ./calculate_metrics.py $filename > generated_metrics/metrics_${problem_name}_${planner}.txt
+        echo "Metrics written to file: generated_metrics/metrics_${problem_name}_${planner}.txt"
+    fi
+fi
