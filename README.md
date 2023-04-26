@@ -1,4 +1,4 @@
-# AI_Planning_Assignment1_UniGe
+# Robocafe - PDDL+ Task Planning Domain and Problem Set
 
 This is a PDDL+ Task Planning domain and problem set developed for a "Robot-enabled" cafe environment, as part of the course "Artificial Intelligence for Robotics II" at the University of Genoa, Italy. For more details, please refer to the attached report. This is a joint effort by:
 - [@amanarora9848](https://github.com/amanarora9848)
