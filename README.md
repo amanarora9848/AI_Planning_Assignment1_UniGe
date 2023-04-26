@@ -1,5 +1,11 @@
 # AI_Planning_Assignment1_UniGe
 
+This is a PDDL+ Task Planning domain and problem set developed for a "Robot-enabled" cafe environment, as part of the course "Artificial Intelligence for Robotics II" at the University of Genoa, Italy. For more details, refer to the attached report. It is a joint effort by:
+- [@amanarora9848](https://github.com/amanarora9848)
+- [@davideCaligola](https://github.com/davideCaligola)
+- [@Lucas-Pardo](https://github.com/Lucas-Pardo)
+- [@pablomoreno555](https://github.com/pablomoreno555)
+
 ## Getting Started
 
 ### Prerequisites
