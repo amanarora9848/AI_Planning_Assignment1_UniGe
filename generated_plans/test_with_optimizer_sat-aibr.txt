@@ -1,0 +1,2250 @@
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 30
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.005) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.042) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.16) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.229) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.27) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 745
+Heuristic Time (msec): 408
+Search Time (msec): 476
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 30
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.005) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.042) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.164) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.223) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.27) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 818
+Heuristic Time (msec): 421
+Search Time (msec): 505
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 34
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.007) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.044) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.172) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.224) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.269) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 829
+Heuristic Time (msec): 438
+Search Time (msec): 509
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 36
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.006) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.037) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.166) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.226) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.289) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 816
+Heuristic Time (msec): 428
+Search Time (msec): 512
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 28
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.006) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.035) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.174) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.232) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.294) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 860
+Heuristic Time (msec): 467
+Search Time (msec): 551
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 42
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.005) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.046) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.161) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.22) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.261) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 865
+Heuristic Time (msec): 431
+Search Time (msec): 499
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 31
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.006) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.036) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.154) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.21) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.253) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 798
+Heuristic Time (msec): 405
+Search Time (msec): 477
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 33
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.005) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.044) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.175) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.231) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.276) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 843
+Heuristic Time (msec): 438
+Search Time (msec): 510
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 40
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.004) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.038) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.153) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.21) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.252) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 807
+Heuristic Time (msec): 422
+Search Time (msec): 478
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 32
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.008) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.047) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.172) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.23) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.273) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 830
+Heuristic Time (msec): 427
+Search Time (msec): 502
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 38
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.005) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.036) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.151) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.203) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.243) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 776
+Heuristic Time (msec): 377
+Search Time (msec): 452
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 31
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.005) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.043) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.166) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.227) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.267) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 796
+Heuristic Time (msec): 411
+Search Time (msec): 483
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 45
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.007) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.069) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.233) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.306) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.361) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 1032
+Heuristic Time (msec): 553
+Search Time (msec): 664
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 44
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.011) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.061) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.232) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.29) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.343) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 971
+Heuristic Time (msec): 479
+Search Time (msec): 596
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 36
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.005) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.052) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.221) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.288) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.343) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 1071
+Heuristic Time (msec): 500
+Search Time (msec): 619
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 38
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.006) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.067) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.287) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.372) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.424) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 1070
+Heuristic Time (msec): 558
+Search Time (msec): 672
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 47
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.006) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.047) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.246) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.306) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.35) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 975
+Heuristic Time (msec): 480
+Search Time (msec): 569
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 44
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.004) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.035) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.177) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.243) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.29) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 914
+Heuristic Time (msec): 514
+Search Time (msec): 609
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 31
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.005) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.041) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.177) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.233) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.28) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 855
+Heuristic Time (msec): 429
+Search Time (msec): 509
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 29
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.007) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.036) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.184) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.241) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.286) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 848
+Heuristic Time (msec): 446
+Search Time (msec): 518
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 41
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.005) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.043) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.18) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.237) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.28) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 885
+Heuristic Time (msec): 457
+Search Time (msec): 536
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 28
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.004) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.034) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.165) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.227) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.267) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 800
+Heuristic Time (msec): 422
+Search Time (msec): 492
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 34
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.004) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.048) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.192) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.254) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.303) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 870
+Heuristic Time (msec): 442
+Search Time (msec): 533
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 28
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.005) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.035) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.172) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.244) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.287) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 818
+Heuristic Time (msec): 447
+Search Time (msec): 521
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 32
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.004) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.033) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.173) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.231) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.274) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 824
+Heuristic Time (msec): 442
+Search Time (msec): 504
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 31
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.004) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.034) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.164) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.22) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.262) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 755
+Heuristic Time (msec): 421
+Search Time (msec): 476
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 43
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.003) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.036) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.182) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.246) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.289) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 869
+Heuristic Time (msec): 452
+Search Time (msec): 532
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 32
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.006) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.033) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.167) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.229) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.272) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 758
+Heuristic Time (msec): 417
+Search Time (msec): 491
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 42
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.004) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.036) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.194) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.263) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.303) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 873
+Heuristic Time (msec): 439
+Search Time (msec): 519
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 35
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+AIBR selected
+Wrong setting for break-ties. Arbitrary tie breaking
+Setting horizon to:NaN
+Running WA-STAR
+h(n = s_0)=142.0
+f(n) = 142.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.008) Frontier Size: 0
+f(n) = 145.0 (Expanded Nodes: 2, Evaluated States: 11, Time: 0.045) Frontier Size: 9
+f(n) = 152.0 (Expanded Nodes: 107, Evaluated States: 215, Time: 0.183) Frontier Size: 103
+f(n) = 153.0 (Expanded Nodes: 241, Evaluated States: 449, Time: 0.25) Frontier Size: 200
+f(n) = 154.0 (Expanded Nodes: 338, Evaluated States: 670, Time: 0.295) Frontier Size: 317
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (move w br table2)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: (start_cleaning w table2)
+3.0: -----waiting---- [5.0]
+5.0: (move w table2 br)
+5.0: -----waiting---- [6.0]
+6.0: (get_drink w drink1 br)
+6.0: (move w br table1)
+6.0: -----waiting---- [7.0]
+7.0: (start_cleaning w table1)
+7.0: (serve w drink1 table1)
+7.0: -----waiting---- [9.0]
+9.0: (move w table1 br)
+9.0: -----waiting---- [10.0]
+10.0: (get_drink w drink2 br)
+10.0: (move w br table2)
+10.0: -----waiting---- [11.0]
+11.0: (serve w drink2 table2)
+11.0: (move w table2 br)
+11.0: -----waiting---- [12.0]
+12.0: (equip_tray w br)
+12.0: (move w br table1)
+12.0: (make_warm_drink drink3 br)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 br)
+14.0: -----waiting---- [17.0]
+17.0: (unequip_tray w br)
+17.0: (get_drink w drink3 br)
+17.0: (move w br table1)
+17.0: -----waiting---- [18.0]
+18.0: (serve w drink3 table1)
+
+Plan-Length:72
+Elapsed Time: 18.0
+Metric (Search):58.0
+Planning Time (msec): 841
+Heuristic Time (msec): 430
+Search Time (msec): 526
+Expanded Nodes:986
+States Evaluated:2095
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:58
+Number of Duplicates detected:423

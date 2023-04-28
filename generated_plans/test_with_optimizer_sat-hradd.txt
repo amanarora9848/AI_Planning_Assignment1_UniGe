@@ -1,0 +1,2430 @@
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 32
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 14
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 420
+Heuristic Time (msec): 59
+Search Time (msec): 95
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 37
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 8
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 471
+Heuristic Time (msec): 64
+Search Time (msec): 106
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 56
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 12
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 588
+Heuristic Time (msec): 69
+Search Time (msec): 119
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 51
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 9
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 488
+Heuristic Time (msec): 65
+Search Time (msec): 94
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 36
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 11
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 423
+Heuristic Time (msec): 63
+Search Time (msec): 107
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 28
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 11
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 402
+Heuristic Time (msec): 63
+Search Time (msec): 102
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 37
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 12
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 502
+Heuristic Time (msec): 87
+Search Time (msec): 124
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 30
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 6
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 394
+Heuristic Time (msec): 56
+Search Time (msec): 91
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 44
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 7
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 442
+Heuristic Time (msec): 67
+Search Time (msec): 96
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 35
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 7
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 430
+Heuristic Time (msec): 55
+Search Time (msec): 91
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 32
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 9
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 376
+Heuristic Time (msec): 60
+Search Time (msec): 96
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 34
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 12
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 394
+Heuristic Time (msec): 55
+Search Time (msec): 94
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 37
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 10
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 463
+Heuristic Time (msec): 69
+Search Time (msec): 112
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 39
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 9
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 405
+Heuristic Time (msec): 49
+Search Time (msec): 82
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 33
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 7
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 368
+Heuristic Time (msec): 51
+Search Time (msec): 86
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 47
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 9
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 414
+Heuristic Time (msec): 52
+Search Time (msec): 87
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 28
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 11
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 405
+Heuristic Time (msec): 64
+Search Time (msec): 101
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 33
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 7
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 379
+Heuristic Time (msec): 69
+Search Time (msec): 97
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 27
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 8
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 384
+Heuristic Time (msec): 57
+Search Time (msec): 92
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 31
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 10
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 462
+Heuristic Time (msec): 69
+Search Time (msec): 102
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 42
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 11
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 514
+Heuristic Time (msec): 72
+Search Time (msec): 109
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 33
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 8
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 396
+Heuristic Time (msec): 59
+Search Time (msec): 95
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 58
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 9
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 483
+Heuristic Time (msec): 56
+Search Time (msec): 90
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 31
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 13
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 442
+Heuristic Time (msec): 79
+Search Time (msec): 118
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 27
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 12
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 395
+Heuristic Time (msec): 67
+Search Time (msec): 106
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 41
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 8
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 393
+Heuristic Time (msec): 62
+Search Time (msec): 91
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 30
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 8
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 408
+Heuristic Time (msec): 54
+Search Time (msec): 91
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 30
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 8
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 458
+Heuristic Time (msec): 55
+Search Time (msec): 98
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 33
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 8
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 439
+Heuristic Time (msec): 48
+Search Time (msec): 87
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
+-------------------
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 33
+Aibr Preprocessing
+|F|:30
+|X|:6
+Aibr Preprocessing
+|A|:22
+|P|:7
+|E|:8
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 11
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=26.0
+ g(n)= 7.0 h(n)=24.0
+ g(n)= 14.0 h(n)=22.0
+ g(n)= 25.0 h(n)=20.0
+ g(n)= 29.0 h(n)=17.0
+ g(n)= 30.0 h(n)=16.0
+ g(n)= 35.0 h(n)=14.0
+ g(n)= 37.0 h(n)=12.0
+ g(n)= 42.0 h(n)=10.0
+ g(n)= 45.0 h(n)=8.0
+ g(n)= 49.0 h(n)=7.0
+ g(n)= 52.0 h(n)=6.0
+ g(n)= 54.0 h(n)=4.0
+ g(n)= 56.0 h(n)=3.0
+ g(n)= 59.0 h(n)=1.0
+ g(n)= 60.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink1 br)
+11.0: (move w br table1)
+11.0: -----waiting---- [12.0]
+12.0: (serve w drink1 table1)
+12.0: (start_cleaning w table1)
+12.0: -----waiting---- [14.0]
+14.0: (move w table1 table2)
+14.0: -----waiting---- [14.5]
+14.5: (start_cleaning w table2)
+14.5: -----waiting---- [16.5]
+16.5: (move w table2 br)
+16.5: -----waiting---- [17.5]
+17.5: (get_drink w drink3 br)
+17.5: (move w br table2)
+17.5: -----waiting---- [18.5]
+18.5: (move w table2 table1)
+18.5: -----waiting---- [19.0]
+19.0: (serve w drink3 table1)
+19.0: (move w table1 br)
+19.0: -----waiting---- [20.0]
+20.0: (get_drink w drink2 br)
+20.0: (move w br table2)
+20.0: -----waiting---- [21.0]
+21.0: (serve w drink2 table2)
+
+Plan-Length:72
+Elapsed Time: 21.0
+Metric (Search):60.0
+Planning Time (msec): 443
+Heuristic Time (msec): 54
+Search Time (msec): 91
+Expanded Nodes:465
+States Evaluated:1334
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1
+Number of Duplicates detected:464
