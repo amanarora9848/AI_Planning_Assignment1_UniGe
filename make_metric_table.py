@@ -19,8 +19,10 @@ for file_name in file_names:
     # Extract the optimizer name
     optimizer_data = {'Optimizer': file_name.replace('metrics_test_', '').replace('.txt', '')}
     
+    # Function to extract the mean and standard deviation values
     def extract_values(lines, keyword):
         values_lines = []
+        # Find the line with the keyword
         for i, line in enumerate(lines):
             if keyword in line:
                 j = i + 1
@@ -32,10 +34,12 @@ for file_name in file_names:
         values_str = ''.join(values_lines)
         return ast.literal_eval(values_str)
 
+    # Extract the mean and standard deviation values
     mean_values = extract_values(lines, 'Mean values:')
     std_dev_values = extract_values(lines, 'Standard Deviation values:')
     
     for key, value in mean_values.items():
+        # Get the corresponding standard deviation value for the current key
         std_dev_value = std_dev_values[key]
         if std_dev_value != 0.0:
             optimizer_data[key] = f"{round(value, 2)} +/- {round(std_dev_value, 2)}"
@@ -44,8 +48,11 @@ for file_name in file_names:
 
     optimizer_data_list.append(optimizer_data)
 
+# Create a dataframe from the optimizer data list
 df = pd.DataFrame(optimizer_data_list)
+# Transpose the dataframe and rename the columns
 df = df.transpose()
+# Rename the columns to the optimizer names
 df = df.rename(columns=df.loc['Optimizer']).drop('Optimizer')
 print(df.to_string())
 df.to_csv('optimizer_data_table.csv', index=True)
