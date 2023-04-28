@@ -2,6 +2,7 @@
 import os
 import pandas as pd
 import ast
+from tabulate import tabulate
 
 # Set your specific directory here
 directory = './generated_metrics/'
@@ -16,7 +17,7 @@ for file_name in file_names:
     with open(os.path.join(directory, file_name), 'r') as file:
         lines = file.readlines()
 
-    # Extract the optimizer name
+    # Dictionary to store the optimizer data, starting with the optimizer name
     optimizer_data = {'Optimizer': file_name.replace('metrics_test_', '').replace('.txt', '')}
     
     # Function to extract the mean and standard deviation values
@@ -55,4 +56,9 @@ df = df.transpose()
 # Rename the columns to the optimizer names
 df = df.rename(columns=df.loc['Optimizer']).drop('Optimizer')
 print(df.to_string())
+
+# Save the beautified table to a file
+with open('metric_table.txt', 'w') as f:
+    f.write(tabulate(df, headers='keys', tablefmt='pipe', numalign='right'))
+
 df.to_csv('optimizer_data_table.csv', index=True)
