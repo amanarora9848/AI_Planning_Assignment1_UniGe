@@ -20,7 +20,8 @@ usage() {
     echo "  -c <planner>    (optional) specify planner configuration to use, default is opt-blind"
     echo "  -z              (optional) uses optimizer (opt-blind) if flag is passed, default is false"
     echo "  -a              (optional) executes all problems if flag is passed, default is false"
-    echo "  -r <repeat>     (optional) specify number of times to repeat the execution, default is 1"
+    echo "  -r <repeat>     (optional) specify number of times to repeat the execution, default is 1."
+    echo "                  Repeat can be used only for a single problem file in observation."
     echo "  -h              display help"
 }
 
