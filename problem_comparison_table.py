@@ -66,7 +66,7 @@ print(df.to_string())
 
 # Save the beautified table to CSV file
 csv_table = tabulate(df, headers='keys', tablefmt='tsv', numalign='right')
-with open('metric_table_problems.csv', 'w') as f:
+with open('tables/metric_table_problems.csv', 'w') as f:
     f.write(csv_table)
 
 # Save the original table as a CSV file

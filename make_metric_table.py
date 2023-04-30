@@ -7,8 +7,8 @@ from tabulate import tabulate
 # Set the directory
 directory = './generated_metrics/'
 
-# Get all file names in the directory
-file_names = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
+# Get all file names in the directory (would take only 'test' metric files)
+file_names = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f)) and 'problem' not in f]
 
 optimizer_data_list = []
 
@@ -59,7 +59,7 @@ print(df.to_string())
 
 # Save the beautified table to CSV file
 csv_table = tabulate(df, headers='keys', tablefmt='tsv', numalign='right')
-with open('metric_table.csv', 'w') as f:
+with open('tables/metric_table.csv', 'w') as f:
     f.write(csv_table)
 
 # Save the original table as a CSV file
