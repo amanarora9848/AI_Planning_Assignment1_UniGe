@@ -57,8 +57,10 @@ df = df.transpose()
 df = df.rename(columns=df.loc['Optimizer']).drop('Optimizer')
 print(df.to_string())
 
-# Save the beautified table to a file
-with open('metric_table.txt', 'w') as f:
-    f.write(tabulate(df, headers='keys', tablefmt='pipe', numalign='right'))
+# Save the beautified table to CSV file
+csv_table = tabulate(df, headers='keys', tablefmt='tsv', numalign='right')
+with open('metric_table.csv', 'w') as f:
+    f.write(csv_table)
 
+# Save the original table as a CSV file
 df.to_csv('optimizer_data_table.csv', index=True)
