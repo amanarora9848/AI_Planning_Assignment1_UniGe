@@ -8,7 +8,7 @@ This is a PDDL+ Task Planning domain and problem set developed for a "Robot-enab
 
 The design of the domain is best represented by the below image:
 
-![Domain Design](images/AI2_Assignment_complete.jpeg)
+![Domain Design](images/robocafe_domain_scheme.jpeg)
 
 ## Getting Started
 
