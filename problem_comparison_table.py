@@ -2,13 +2,17 @@
 import os
 import pandas as pd
 import ast
+import re
 from tabulate import tabulate
 
 # Set the directory
 directory = './generated_metrics/'
 
-# Get all file names in the directory
-file_names = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
+# Get all file names in the directory that end with 'sat-hadd.txt'
+file_names = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f)) and f.endswith('sat-hadd.txt')]
+
+# Sort the file names based on the problem name
+file_names.sort(key=lambda x: re.search(r'_(\w+)_sat-hadd', x).group(1))
 
 optimizer_data_list = []
 
@@ -17,9 +21,12 @@ for file_name in file_names:
     with open(os.path.join(directory, file_name), 'r') as file:
         lines = file.readlines()
 
-    # Dictionary to store the optimizer data, starting with the optimizer name
-    optimizer_data = {'Optimizer': file_name.replace('metrics_test_', '').replace('.txt', '')}
-    
+    # Extract the problem name from the file name
+    problem_name = re.search(r'_(\w+)_sat-hadd', file_name).group(1)
+
+    # Dictionary to store the optimizer data, starting with the problem name
+    optimizer_data = {'Optimizer': problem_name}
+
     # Function to extract the mean and standard deviation values
     def extract_values(lines, keyword):
         values_lines = []
@@ -38,7 +45,7 @@ for file_name in file_names:
     # Extract the mean and standard deviation values
     mean_values = extract_values(lines, 'Mean values:')
     std_dev_values = extract_values(lines, 'Standard Deviation values:')
-    
+
     for key, value in mean_values.items():
         # Get the corresponding standard deviation value for the current key
         std_dev_value = std_dev_values[key]
@@ -53,12 +60,12 @@ for file_name in file_names:
 df = pd.DataFrame(optimizer_data_list)
 # Transpose the dataframe and rename the columns
 df = df.transpose()
-# Rename the columns to the optimizer names
+# Rename the columns to the problem names
 df = df.rename(columns=df.loc['Optimizer']).drop('Optimizer')
 print(df.to_string())
 
 # Save the beautified table to a file
-with open('metric_table.txt', 'w') as f:
+with open('metric_table_problems.txt', 'w') as f:
     f.write(tabulate(df, headers='keys', tablefmt='pipe', numalign='right'))
 
 df.to_csv('optimizer_data_table.csv', index=True)

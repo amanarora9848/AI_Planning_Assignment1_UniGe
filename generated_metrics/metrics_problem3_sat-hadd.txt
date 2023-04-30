@@ -1,0 +1,36 @@
+
+
+Number of observations:  30
+
+Mean values: 
+{'Expanded Nodes': 2093.0,
+ 'Grounding Time': 45.36666666666667,
+ 'Heuristic Time (msec)': 255.73333333333332,
+ 'Metric (Search)': 91.0,
+ 'Number of Dead-Ends detected': 3.0,
+ 'Number of Duplicates detected': 2487.0,
+ 'Planning Time (msec)': 673.5333333333333,
+ 'Search Time (msec)': 354.03333333333336,
+ 'States Evaluated': 10237.0,
+ '|A|': 47.0,
+ '|E|': 10.0,
+ '|F|': 46.0,
+ '|P|': 7.0,
+ '|X|': 5.0}
+
+
+Standard Deviation values: 
+{'Expanded Nodes': 0.0,
+ 'Grounding Time': 10.355299233832996,
+ 'Heuristic Time (msec)': 42.17023700299642,
+ 'Metric (Search)': 0.0,
+ 'Number of Dead-Ends detected': 0.0,
+ 'Number of Duplicates detected': 0.0,
+ 'Planning Time (msec)': 121.38938265854316,
+ 'Search Time (msec)': 64.99358087961883,
+ 'States Evaluated': 0.0,
+ '|A|': 0.0,
+ '|E|': 0.0,
+ '|F|': 0.0,
+ '|P|': 0.0,
+ '|X|': 0.0}
