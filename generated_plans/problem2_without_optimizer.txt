@@ -1,0 +1,87 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 42
+Aibr Preprocessing
+|F|:52
+|X|:9
+Aibr Preprocessing
+|A|:47
+|P|:9
+|E|:12
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 11
+Setting horizon to:NaN
+Running Greedy Best First Search
+h(n = s_0)=28.0
+ g(n)= 7.0 h(n)=26.0
+ g(n)= 14.0 h(n)=24.0
+ g(n)= 25.0 h(n)=22.0
+ g(n)= 30.0 h(n)=19.0
+ g(n)= 31.0 h(n)=18.0
+ g(n)= 42.0 h(n)=16.0
+ g(n)= 51.0 h(n)=12.0
+ g(n)= 58.0 h(n)=9.0
+ g(n)= 59.0 h(n)=8.0
+ g(n)= 69.0 h(n)=5.0
+ g(n)= 70.0 h(n)=4.0
+ g(n)= 76.0 h(n)=3.0
+ g(n)= 80.0 h(n)=1.0
+ g(n)= 81.0 h(n)=0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: -----waiting---- [3.0]
+3.0: (make_cold_drink drink2 br)
+3.0: -----waiting---- [6.0]
+6.0: (make_warm_drink drink3 br)
+6.0: -----waiting---- [11.0]
+11.0: (get_drink w drink3 br)
+11.0: (move w br table3)
+11.0: -----waiting---- [14.0]
+14.0: (serve w drink3 table3)
+14.0: (move w table3 table1)
+14.0: -----waiting---- [14.5]
+14.5: (make_warm_drink drink4 br)
+14.5: -----waiting---- [18.5]
+18.5: (start_cleaning w table1)
+18.5: -----waiting---- [20.5]
+20.5: (move w table1 br)
+20.5: -----waiting---- [21.5]
+21.5: (get_drink w drink4 br)
+21.5: (move w br table3)
+21.5: -----waiting---- [23.0]
+23.0: (serve w drink4 table3)
+23.0: (move w table3 table2)
+23.0: -----waiting---- [23.5]
+23.5: (move w table2 br)
+23.5: -----waiting---- [24.5]
+24.5: (get_drink w drink2 br)
+24.5: (move w br table3)
+24.5: -----waiting---- [26.0]
+26.0: (serve w drink2 table3)
+26.0: (move w table3 table2)
+26.0: -----waiting---- [26.5]
+26.5: (move w table2 br)
+26.5: -----waiting---- [27.5]
+27.5: (get_drink w drink1 br)
+27.5: (move w br table3)
+27.5: -----waiting---- [29.0]
+29.0: (serve w drink1 table3)
+
+Plan-Length:96
+Elapsed Time: 29.0
+Metric (Search):81.0
+Planning Time (msec): 1412
+Heuristic Time (msec): 778
+Search Time (msec): 1058
+Expanded Nodes:6217
+States Evaluated:29621
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:1199
+Number of Duplicates detected:6976
