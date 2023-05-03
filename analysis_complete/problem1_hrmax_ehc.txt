@@ -1,0 +1,155 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 55
+Aibr Preprocessing
+|F|:64
+|X|:13
+Aibr Preprocessing
+|A|:71
+|P|:14
+|E|:20
+Delta time heuristic model:0.5
+Delta time planning model:0.5
+Delta time search-execution model:0.5
+Delta time validation model:0.5
+H1 Setup Time (msec): 20
+Setting horizon to:NaN
+Running Enforced Hill Climbing
+h(n):14.0 
+ 1.0
+ 2.0
+ 3.0
+ 4.0
+ 5.0
+ 6.0
+ 7.0
+ 8.0
+ 9.0
+ 10.0
+ 11.0
+ 12.0
+ 13.0
+h(n):13.0
+Extracting plan with execution delta: 0.5
+h(n):13.0 
+ 1.0
+ 2.0
+ 3.0
+ 4.0
+ 5.0
+ 6.0
+ 7.0
+h(n):11.0
+Extracting plan with execution delta: 0.5
+h(n):11.0 
+ 1.0
+h(n):10.0
+Extracting plan with execution delta: 0.5
+h(n):10.0 
+h(n):9.0
+Extracting plan with execution delta: 0.5
+h(n):9.0 
+h(n):8.0
+Extracting plan with execution delta: 0.5
+h(n):8.0 
+h(n):7.0
+Extracting plan with execution delta: 0.5
+h(n):7.0 
+h(n):6.0
+Extracting plan with execution delta: 0.5
+h(n):6.0 
+h(n):5.0
+Extracting plan with execution delta: 0.5
+h(n):5.0 
+ 1.0
+ 2.0
+ 3.0
+ 4.0
+h(n):4.0
+Extracting plan with execution delta: 0.5
+h(n):4.0 
+ 1.0
+ 2.0
+ 3.0
+ 4.0
+ 5.0
+ 6.0
+ 7.0
+ 8.0
+ 9.0
+ 10.0
+ 11.0
+h(n):3.0
+Extracting plan with execution delta: 0.5
+h(n):3.0 
+ 1.0
+ 2.0
+ 3.0
+ 4.0
+ 5.0
+ 6.0
+h(n):2.0
+Extracting plan with execution delta: 0.5
+h(n):2.0 
+ 1.0
+ 2.0
+ 3.0
+ 4.0
+ 5.0
+h(n):1.0
+Extracting plan with execution delta: 0.5
+h(n):1.0 
+ 1.0
+ 2.0
+ 3.0
+ 4.0
+ 5.0
+ 6.0
+ 7.0
+ 8.0
+ 9.0
+ 10.0
+ 11.0
+h(n):0.0
+Extracting plan with execution delta: 0.5
+Problem Solved
+
+Found Plan:
+0: (make_cold_drink drink1 br)
+0: (make_cold_drink drink2 br)
+0: (equip_tray w1 br)
+0: (get_drink w1 drink1 br o)
+0: (get_drink w1 drink2 br o)
+0: (move w1 br table2)
+0: (serve w1 drink1 table2 o)
+0: (serve w1 drink2 table2 o)
+0: (move w1 table2 br)
+0: (move w2 table1 table4)
+0: (start_cleaning w2 table4)
+0: (get_biscuit w1 drink2 br o)
+0: (get_biscuit w1 drink1 br o)
+0: (move w1 br table2)
+0: (move w2 table4 table3)
+0: (serve_biscuit w1 o table2 drink2)
+0: (serve_biscuit w1 o table2 drink1)
+0: (move w1 table2 br)
+0: (unequip_tray w1 br)
+0: (move w1 br table3)
+0: (start_cleaning w2 table3)
+0: (move w1 table3 table2)
+0: (check_order w1 o)
+0: (check_consumed_order o table2)
+0: (start_cleaning w1 table2)
+
+Plan-Length:25
+Elapsed Time: 23.0
+Metric (Search):12.0
+Planning Time (msec): 7731
+Heuristic Time (msec): 5826
+Search Time (msec): 7311
+Expanded Nodes:68172
+States Evaluated:94178
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:0
