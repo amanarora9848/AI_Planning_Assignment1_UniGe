@@ -69,7 +69,7 @@ execute_plan() {
             java -$configS -$configX -XX:+AlwaysPreTouch -jar $plan -o $domain -f "${problem}" -delta 0.5 -planner $planner >> ${filename}
         fi
     else
-        java -$configS -$configX -XX:+AlwaysPreTouch -jar $plan -o $domain -f "${problem}" -delta 0.5 > ${problem_name}_without_optimizer.txt
+        java -$configS -$configX -XX:+AlwaysPreTouch -jar $plan -o $domain -f "${problem}" -delta 0.5 > "generated_plans/${problem_name}_without_optimizer.txt"
     fi
 }
 
