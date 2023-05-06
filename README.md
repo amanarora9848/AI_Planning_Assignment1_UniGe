@@ -12,6 +12,8 @@ The design of the domain is best represented by the below image:
 
 ## Getting Started
 
+This branch contains the PDDL+ domain and problems combined with the extensions.
+
 ### Prerequisites
 The domain is PDDL+ domain and requires a planning engine to be installed. To download the ENHSP Planning Engine, please follow the instructions given on the ENHSP webpage: https://sites.google.com/view/enhsp/
 
@@ -24,7 +26,7 @@ git clone https://github.com/amanarora9848/robocafe_AI_task_planning.git
 
 ### Generating Plans:
 
-The script `generate_plan.sh` can be used to generate plans for the given base pddl+ domain and problems with or without using an optimizer, and can also calculate metrics like mean and standard deviation for given data points specific to an optimizer, if used.
+The script `generate_plan.sh` can be used to generate plans for the given base pddl+ domain and problems with or without using an optimizer.
 
 For help regarding running the generate_plan.sh script, run the following command:
 ```bash
